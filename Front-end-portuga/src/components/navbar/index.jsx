@@ -16,13 +16,13 @@ function NavMenu({ photo, img }) {
 
         <div className="collapse navbar-collapse" id="menu">
           <ul className="navbar-nav">
-            <li className="nav-item"><Link className="nav-link" to='/home'>Home</Link></li>
+            <li className="nav-item"><Link className="nav-link" to='/'>Home</Link></li>
             <li className="nav-item"><Link to='/desafio' className="nav-link">
               <img src={img} width="20px" />
               Desafios Portuga
             </Link></li>
             <li className="nav-item"><Link to='/ebook' className="nav-link">Ebooks</Link></li>
-            <li className="nav-item"><Link to='/' className="nav-link">Login</Link></li>
+            <li className="nav-item"><Link to='/login' className="nav-link">Login</Link></li>
           </ul>
 
         </div>

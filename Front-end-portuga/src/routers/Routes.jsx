@@ -9,10 +9,10 @@ import { Ebook } from '../pages/Ebook';
 export default props => (
     <BrowserRouter>
         <Routes>
-            <Route exact path="/" element={<Login />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/desafio" element={<Desafio />} />
             <Route path="/ebook" element={<Ebook />} />
+            <Route exact path="/login" element={<Login />} />
         </Routes>
     </BrowserRouter>
 

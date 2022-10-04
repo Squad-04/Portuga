@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(223, 247, 235);
+}
+.containerCards{
+    display: flex;
+    flex-direction: row;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    
+}

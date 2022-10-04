@@ -1,0 +1,57 @@
+.container{
+    border:1px solid rgb(99, 173, 99);
+    border-radius:7px;
+    margin-top:25px;
+    padding: 25px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.178);
+    text-align: center;
+    width:90%;
+    margin:auto;
+  }
+  div.container{
+    background-color: white;
+  }
+  
+  div h4{
+    
+    margin-top: 10%;
+    padding: 13px;
+  }
+
+
+  body{
+    background-color: rgb(223, 247, 235);
+  }
+  
+  .apresentacao{
+    height: 800px;
+    background-color: bisque;
+  }
+  .texcentro{
+    margin-top:80px;
+    
+  
+  }
+  .rodape{
+    height:100px;
+    background-color: rgb(182, 216, 182);
+    text-align: center;
+    padding:15px;
+  }
+  
+  /* desafio todas*/
+  
+  .titulo{
+    margin:20px;
+    background-color: rgb(228, 207, 169);
+    padding:15px;
+  }
+  
+  .subtitulo{
+    text-align:left;
+    margin:30px
+  
+  }
+  .btnpe{
+    width:130px;
+  }

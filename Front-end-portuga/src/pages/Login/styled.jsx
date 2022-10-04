@@ -6,7 +6,7 @@ export const LoginUIX = styled.div`
     justify-content: center;
     align-items: center;  
     background-image: radial-gradient(circle at 50% 50%, #a4e0c8 0, #8ed5c1 16.67%, #6dc4b5 33.33%, #3aaea4 50%, #009895 66.67%, #00878d 83.33%, #007c8b 100%);
-    height:43.4rem;
+    height:100vh;
 
 .container-fluid {
     background: rgb(48,174,158);

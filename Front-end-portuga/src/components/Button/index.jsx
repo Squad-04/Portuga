@@ -1,8 +1,11 @@
-function Button({name}){
-    return(
-        <button type="button" className="btn btn-success">{name}</button>
-    
-    
-        );
+import { ButtonUIX } from "./styled";
+
+function Button({ name }) {
+    return (
+        <ButtonUIX>
+            <button type="button" className="btn">{name}</button>
+        </ButtonUIX>
+
+    );
 }
 export default Button;

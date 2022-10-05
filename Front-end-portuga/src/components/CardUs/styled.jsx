@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const CardIUX = styled.div`
 .container{
-    width: 25rem;
-    height: 40rem;
+    width: 20rem;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 2.3rem;
+    margin-left: 0.7rem;
 
     
 }

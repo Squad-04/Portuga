@@ -1,6 +1,13 @@
+import React, { useState } from 'react';
 import { LoginUIX } from './styled';
 
+
 export function Login() {
+
+    // const [login,setLogin] = useState(){
+
+
+
     return (
         <LoginUIX>
             <main className="principal">

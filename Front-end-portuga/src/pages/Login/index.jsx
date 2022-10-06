@@ -1,23 +1,25 @@
-import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UserService } from '../../service/user';
 import { LoginUIX } from './styled';
+import { useContext, useState } from 'react';
+import UserContext from '../../context/userInfo';
+
 
 
 export function Login() {
 
-    const navigate = useNavigate('');
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [emailRegister, setEmailRegister] = useState('');
-    const [passwordRegister, setPasswordRegister] = useState(''); 
+    const [passwordRegister, setPasswordRegister] = useState('');
     const [show, setShow] = useState(false);
     const { setUserInfo } = useContext(UserContext);
 
     const handleClose = () => setShow(false);
-    const handleShow = () => {
+     const handleShow = () => {
         setShow(true);
-    }
+     }
 
     const handleRegister = async(e) => {
         e.prevetDefault();
@@ -46,7 +48,7 @@ export function Login() {
         }
     return (
         <LoginUIX>
-            <main className="principal">
+            <main>
                 <div className="container-fluid">
                             <section className="cadastro ">
                                 <h1>Login</h1>
@@ -54,14 +56,14 @@ export function Login() {
                                     <form className='menuLog'>
                                         <div>
                                             <label for="inputEmail">Email</label>
-                                            <input type="email" className="form-control"
-                                                placeholder="Email" required="" />
+                                            <input type="email" className="form-control" value={email}  placeholder="Email" onChange={(e) => setEmail(e.currentTarget.value)}
+                                                 />
                                         </div>
                                         <div>
                                             <div>
                                                 <label for="inputPassword">Senha</label>
-                                                <input type="password" className="form-control"
-                                                    placeholder="Senha" required='' />
+                                                <input type="password" className="form-control" value={password} placeholder="Senha" onChange={(e) => setPassword(e.currentTarget.value)}
+                                                      />
                                             </div>
                                             <div className="check">
                                                 <input className="form-check input" type="checkbox" />
@@ -69,8 +71,8 @@ export function Login() {
                                                     mim</label>
                                             </div>
                                             <div>
-                                                <button type="submit" className="btn-success btn-lg ">Login<a
-                                                    href=""></a></button>
+                                                <button type="submit" className="btn-success btn-lg" onClick={(e) => loginUser(e)}> Login
+                                                  </button>
                                             </div>
                                             <span className="icon">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -89,9 +91,9 @@ export function Login() {
                                                         d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                                                 </svg>
                                             </span>
-                                            <div className="primeiro">
+                                            <div className="primeiro" animation={false} show={show} onHide={handleClose} >
                                                 <p>Primeiro acesso? Cadastre-se <a className="clicandoAqui" href="#"
-                                                    data-toggle="modal" data-target=".bd-example-modal-lg">clicando
+                                                    data-toggle="modal" data-target=".bd-example-modal-lg"   >clicando
                                                     aqui</a></p>
                                                 <p className="help"><a href="ajuda.html">Precisa de ajuda?</a></p>
                                             </div>
@@ -119,21 +121,16 @@ export function Login() {
                                     <div className="form-row">
                                         <div className="form-group">
                                             <label for="inputEmail4">Email</label>
-                                            <input type="email" className="form-control" id="inputEmail4" placeholder="Email" />
+                                            <input type="email" className="form-control"value={emailRegister} onChange={(e) => setEmailRegister(e.currentTarget.value)}/>
                                         </div>
                                         <div className="form-group col-md-6">
                                             <label for="inputPassword4">Senha</label>
-                                            <input type="password" className="form-control" id="inputPassword4" placeholder="Senha" />
+                                            <input type="password" className="form-control" value={passwordRegister} onChange={(e) => setPasswordRegister(e.currentTarget.value)} />
                                         </div>
                                     </div>
                                     <div className="form-group">
                                         <label for="inputAddress">Endereço</label>
                                         <input type="text" className="form-control" id="inputAddress" placeholder="" />
-                                    </div>
-                                    <div className="form-group">
-                                        <label for="inputAddress2">Complemento</label>
-                                        <input type="text" className="form-control" id="inputAddress2"
-                                            placeholder="Apartamento, casa .." />
                                     </div>
                                     <div className="form-row">
                                         <div className="form-group col-md-6">
@@ -162,7 +159,7 @@ export function Login() {
                                             <input className="form-input" type="checkbox" id="confirme" /> Desejo ser um doador
                                         </div>
                                     </div>
-                                    <button type="submit" className="btn btn-primary" id="botao-login">Confirmar Cadastro</button>
+                                    <button type="submit" className="btn btn-primary" id="botao-login" onClick={handleRegister}>Confirmar Cadastro</button>
                             </form>
                         </div>
                     </div>

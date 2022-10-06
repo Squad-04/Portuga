@@ -7,13 +7,14 @@ export const CardStyled = styled.div`
         flex-direction: column;
         display: flex;
         align-items: center;
-        width: 27rem;
-        height: 15rem;
         justify-content: center;
-        padding: 45px;
-        padding-bottom: 10rem;
-        background-color: #dad6d6;
-        margin: 14px;
+        width: 15rem;
+        height: 14rem;
+        padding: 50px;
+        padding-bottom: 6rem;
+        border: solid ;
+        background-color: rgb(178, 238, 153);
+        margin: 30px;
         margin-left: 10rem;
         
         h4{
@@ -25,12 +26,20 @@ export const CardStyled = styled.div`
             margin: auto;
         }
 
-        button{
-            display: flex;
-            align-items: center;
-            width: 4rem;
-            height: auto;
-
-    
-    }    
+    img{
+                width: 8rem;
+                margin: 5rem;
+                height: auto;
+                border-radius: 5px;
+            }
+        
+           :hover{
+            cursor: pointer;
+            box-shadow:
+                1px 1px #53a7ea,
+                2px 2px #53a7ea,
+                3px 3px #53a7ea;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+           }
         `;

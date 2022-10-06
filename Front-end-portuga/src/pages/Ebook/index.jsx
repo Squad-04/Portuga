@@ -23,7 +23,7 @@ export function Ebook() {
             <EbookUIX>
                 <section>
                     <EbookCard photo={Virgem} down="Baixar" favorite="Favoritar" />
-                    <EbookCard photo={Herry} down="Baixar" favorite="Favoritar" />
+                    <EbookCard photo={Herry} down="baixar" favorite="Favoritar" />
                     <EbookCard photo={Estrelas} down="Baixar" favorite="Favoritar" />
                     <EbookCard photo={Capitao} down="Baixar" favorite="Favoritar" />
                     <EbookCard photo={anneFrank} down="Baixar" favorite="Favoritar" />

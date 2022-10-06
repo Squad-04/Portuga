@@ -15,50 +15,36 @@ export const QuizUIX = styled.div`
         border-radius: 7px;
         box-shadow: 10px 10px 15px rgb(0 0 0 / 18%);
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         padding: 25px;
         height: auto;
         margin: 0px 45.5px;
         background-color: #FFFF;
-        
-
-        h3 {
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        background-color: #E4CFA9;
-        margin: 10px;
-    }
-
-        h4{
-            color: #212529;
-            font-size: 24px;
-            margin: 30px;
-        }
+        gap: 40px;
 
         img{
-            width: 30%;
-            margin: 10px;
-            margin-left:20rem;
+            width: 25rem;
+            height: auto;
             
         }
     }
 
     .btn-group{
-            margin-left: 20rem;
             width: 20rem;
-            border-radius: 6px
+            border-radius: 6px;
+            justify-content: center;
         }
 
     .options{
             display: flex;
             flex-direction: column;
-            
-            input{
-                border: solid red;
-            }
-
-        
+            text-align: left;
+            margin-left: 40px;
+    }
+    .questions{
+        margin: 0px 20px;
     }
 
 `;

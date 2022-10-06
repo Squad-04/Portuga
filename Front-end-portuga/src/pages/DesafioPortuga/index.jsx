@@ -5,6 +5,8 @@ import icone from '../../assets/livro_icone.png';
 import lupa from '../../assets/lupa-icon.png'
 
 import './styled.css';
+import { Link } from 'react-router-dom';
+
 
  export function Desafio({photo}){
     return(
@@ -28,13 +30,11 @@ import './styled.css';
                     </div>
                     <div className="col-sm-4">
                         <button type="button" className="btn-secondary btn-lg btn-block" disabled>Categorias</button>
-                        <a className="btn btn-success btn-block" href="todas.html" target="_self" role="button">Todas</a>
-                        <a className="btn btn-success btn-sm btn-block" href="emconstrucao.html" target="_self" role="button">Notícias</a>
-                        <a className="btn btn-success btn-sm btn-block" href="emconstrucao.html" target="_self" role="button">Literatura</a>
-                        <a className="btn btn-success btn-sm btn-block" href="emconstrucao.html" target="_self" role="button">Quadrinhos</a>
-                        <a className="btn btn-success btn-sm btn-block" href="emconstrucao.html"target="_self" role="button">Propagandas</a>
-                        <a className="btn btn-success btn-sm btn-block" href="emconstrucao.html" target="_self" role="button">Provas do Enem</a>
-                        <a className="btn btn-success btn-sm btn-block" href="emconstrucao.html" target="_self" role="button">Concursos Públicos</a>
+                        <Link className="btn btn-success btn-sm btn-block" to="/quiz" target="_self" role="button">Todas</Link>
+                        <Link className="btn btn-success btn-sm btn-block" target="_self" role="button" >Provas do Enem</Link>
+                        <Link className="btn btn-success btn-sm btn-block"  target="_self" role="button">Concursos Públicos</Link>
+                        <Link className="btn btn-success btn-sm btn-block"  target="_self" role="button">Temas Diversos</Link>
+
                     </div>
                 </div>
             </div>

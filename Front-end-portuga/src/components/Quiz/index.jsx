@@ -1,53 +1,68 @@
 import { QuizUIX } from './styled';
-import img from '../../assets/apresentação1.png';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
+import { Link } from 'react-router-dom';
+
+import { useNavigate } from 'react-router-dom';
+
+import getQuestions from './Quiz.json'
+import quiz from '../../assets/quiz1.png';
+import { useState } from 'react';
 
 
-export function Quiz() {
+export function Quiz({ title, subtitle, photo }) {
+
+    const navigate = useNavigate('');
+    const [correctAnswer, setCorrectAnswer] = useState(0);
+    const [wrongAnswer, setWrongAnswer] = useState(0);
+    const [questions, setQuestions] = useState(getQuestions);
+    const [answer, setAnswer] = useState("");
+
+    const handleAnswer = () => {
+
+        if (questions[0].number !== 10) {
+            if (answer === questions[0].correct_answer) {
+                setCorrectAnswer(correctAnswer + 1)
+                alert("Você acertou!")
+            } else {
+                setWrongAnswer(wrongAnswer + 1)
+                alert("Você errou!")
+            }
+            const newQuestions = questions.filter((item) => item.number !== questions[0].number)
+            setQuestions(newQuestions);
+        }
+        else {
+            alert(`Respostas corretas: ${correctAnswer}, respostas erradas: ${wrongAnswer}`)
+            navigate('/desafio')
+        }
+    }
+
     return (
         <QuizUIX>
-         <Navbar />
+            <Navbar />
             <main>
                 <div className="container">
                     <div className="btn-group">
                         <a className="btn btn-success disabled">DESAFIOS:</a>
-                        <button type="button" className="btn btn-warning">1º</button>
-                        <button type="button" className="btn btn-success">2º</button>
-                        <button type="button" className="btn btn-success">3º</button>
-                        <button type="button" className="btn btn-success">4º</button>
-                        <button type="button" className="btn btn-success">5º</button>
+                        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(item => (<button type="button" className={`btn ${questions[0].number === item ? 'btn-success' : 'btn-warning'}`}>{item}</button>))}
                     </div>
-                    <h3>1º Desafio</h3>
-                    <h4>Questão 1/10:</h4>
-                    <img src={img} />
+                    {/* <h3>{title}</h3> */}
+                    <img src={questions[0].image} />
 
-                    <p>Pela análise do conteúdo, constata-se que essa campanha publicitária tem como função social:</p>
+                    <span className='questions'>{questions[0].question}</span>
                     <div className="options">
-                        <label>
-                            <input type="radio" name="escolha" />(a) propagar a imagem positiva do Ministério Público.
-                        </label>
-
-                        <label>
-                            <input type="radio" name="escolha" />(b) conscientizar a população que direitos implicam deveres.
-                        </label>
-                        <label>
-                            <input type="radio" name="escolha" />(c) coibir violações de direitos humanos nos meios de comunicação.
-                        </label>
-                        <label>
-                            <input type="radio" name="escolha" />(d) divulgar políticas sociais que combatem a intolerância preconceito.
-                        </label>
-                        <label>
-                            <input type="radio" name="escolha" />(e) instruir as pessoas sobre a forma correta de expressão nas redes sociais
-                        </label>
+                        {questions[0].answers.map(item => (
+                            <label>
+                                <input type="radio" name="escolha" value={item} onClick={(e) => setAnswer(e.currentTarget.value)} />{item}
+                            </label>
+                        ))}
                     </div>
+
                     <div className="btn-group">
-                        <a className="btn btn-success btnpe" href="portuga.html">voltar</a>
-                        <a className="btn btn-success btnpe" href="resposta_todas.html">Responder</a>
-                        <a className="btn btn-success btnpe" href="todas2.html">Questão 2/10</a>
+                        <button className="btn btn-success btn" onClick={() => handleAnswer()}>Responder</button>
                     </div>
                 </div>
-             </main>   
+            </main>
             <Footer />
         </QuizUIX>
 

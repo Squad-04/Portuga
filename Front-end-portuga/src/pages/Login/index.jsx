@@ -1,13 +1,49 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { UserService } from '../../service/user';
 import { LoginUIX } from './styled';
 
 
 export function Login() {
 
-    // const [login,setLogin] = useState(){
+    const navigate = useNavigate('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [emailRegister, setEmailRegister] = useState('');
+    const [passwordRegister, setPasswordRegister] = useState(''); 
+    const [show, setShow] = useState(false);
+    const { setUserInfo } = useContext(UserContext);
 
+    const handleClose = () => setShow(false);
+    const handleShow = () => {
+        setShow(true);
+    }
 
+    const handleRegister = async(e) => {
+        e.prevetDefault();
 
+        try{
+            const { data } = await UserService.registerUser(emailRegister, passwordRegister);
+            alert(`Email ${emailRegister}, cadastrado com sucesso!`)
+            setShow(false);
+
+        }catch(error){
+            console.log('Erro')
+        }
+    }
+
+        const loginUser = async(e) => {
+            e.prevetDefault();
+            try {
+                const { data } = await UserService.loginUser(email,password);
+                if(data?.email === email && data?.senha === password){
+                    setUserInfo(data);
+                    navigate("/home");
+                }
+            }catch(error) {
+                alert('Usuario ou senha invalidos, por favor tente novamente!')
+            }
+        }
     return (
         <LoginUIX>
             <main className="principal">

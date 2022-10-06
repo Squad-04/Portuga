@@ -6,7 +6,7 @@ function NavMenu({ photo, img }) {
     <NavBackground>
       <nav className="navbar navbar-dark navbar-expand-lg ">
         <a className="navbar-brand" href="./index.html">
-          <img src={photo} width="30px" />
+          <img src={img} width="30px" />
           Portuga
         </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
@@ -18,7 +18,7 @@ function NavMenu({ photo, img }) {
           <ul className="navbar-nav">
             <li className="nav-item"><Link className="nav-link" to='/'>Home</Link></li>
             <li className="nav-item"><Link to='/desafio' className="nav-link">
-              <img src={img} width="20px" />
+              <img src={photo} width="20px" />
               Desafios Portuga
             </Link></li>
             <li className="nav-item"><Link to='/ebook' className="nav-link">Ebooks</Link></li>

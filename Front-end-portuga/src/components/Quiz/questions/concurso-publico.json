@@ -1,0 +1,134 @@
+[
+    {
+     "image": "../src/assets/Pergunta01.jpg",
+    "number": 1,
+    "question": "A internet proporcionou o surgimento de novos paradigmas sociais e impulsionou a modificação de outros já estabelecidos nas esferas da comunicação e da informação. A principal consequência criticada na tirinha sobre esse processo é a",
+    "answers": [
+    "(a) criação de memes",
+    "(b)  ampliação da blogosfera.",
+    "(c) supremacia das ideias cibernéticas",
+    "(d) comercialização de pontos de vista",
+    "(e) banalização do comércio eletrônico"
+],
+    "correct_answer": "(d) comercialização de pontos de vista"
+    },
+
+    {
+    "image": "../src/assets/pergunta02",
+    "number": 2,
+    "question": "Num texto narrativo, a sequência dos fatos contribui para a progressão temática. No fragmento, esse processo é indicado pela",
+    "answers": [
+    "(a) alternância das pessoas do discurso que determinam o foco narrativo..",
+    "(b) utilização de formas verbais que marcam tempos narrativos variados",
+    "(c) indeterminação dos sujeitos de ações que caracterizam os eventos narrados.",
+    "(d) justaposição de frases que relacionam semanticamente os acontecimentos narrados"
+    ],
+    "correct_answer": "(b) utilização de formas verbais que marcam tempos narrativos variados"
+    },
+
+    {
+    "image": "../src/assets/pergunta03.png",
+    "number": 3,
+    "question": "A imagem integra uma adaptação em quadrinhos da obra Grande sertão: veredas, de Guimarães Rosa. Na representação gráfica, a inter-relação de diferentes linguagens caracteriza-se por",
+    "answers": [
+    "(a) romper com a linearidade das ações da narrativa literária",
+    "(b) ilustrar de modo fidedigno passagens representativas da história",
+    "(c) articular a tensão do romance à desproporcionalidade das formas.",
+    "(d) potencializar a dramaticidade do episódio com recursos das artes visuais"
+    ],
+    "correct_answer": "(d) potencializar a dramaticidade do episódio com recursos das artes visuais"
+    },
+
+    {
+    "image": "../src/assets/pergunta04.png",
+    "number": 4,
+    "question": "No título proposto para esse texto de divulgação científica, ao dissociar os elementos da expressão Big Bang, a autora revela a intenção de",
+    "answers": [
+    "(a) evidenciar a descoberta recente que comprova a explosão de matéria e energia",
+    "(b) resumir os resultados de uma pesquisa que trouxe evidências para a teoria do Big Bang",
+    "(c) sintetizar a ideia de que a teoria da expansão de matéria e energia substitui a teoria da explosão",
+    "(d) destacar a experiência que confirma uma investigação anterior sobre a teoria de matéria e energia."
+    ],
+    "correct_answer": "(c) sintetizar a ideia de que a teoria da expansão de matéria e energia substitui a teoria da explosão"
+
+    },
+    {
+        "image": "../src/assets/pergunta05.png",
+    "number": 5,
+    "question": "Nessa campanha, a principal estratégia para convencer o leitor a fazer a reciclagem do lixo é a utilização da linguagem não verbal como argumento para",
+    "answers": [
+    "(a) reaproveitamento de material",
+    "(b) facilidade na separação do lixo",
+    "(c) melhoria da condição do catador",
+    "(d) geração de renda para o trabalhador"
+    ],
+    "correct_answer": "(a) reaproveitamento de material"
+    },
+    {
+    "image": "../src/assets/pergunta06.png",
+    "number": 6,
+    "question": "Nessa charge, o recurso morfossintático que colabora para o efeito de humor está indicado pelo(a)",
+
+    "answers": [
+    "(a) emprego de uma oração adversativa, que orienta a quebra da expectativa ao final",
+    "(b) uso de conjunção aditiva, que cria uma relação de causa e efeito entre as ações",
+    "(c) retomada do substantivo 'mãe', que desfaz a ambiguidade dos sentidos a ele atribuídos",
+    "(d) repetição da forma verbal 'é', que reforça a relação de adição existente entre as orações"
+    ],
+    "correct_answer": "(a) emprego de uma oração adversativa, que orienta a quebra da expectativa ao final"
+
+    },
+    {
+    "image": "../src/assets/pergunta07.png",
+    "number": 7,
+    "question": "Os falantes, nos textos que produzem, sejam orais ou escritos, posicionam-se frente a assuntos que geram consenso ou despertam polêmica. No texto, a autora",
+
+    "answers": [
+    "(a) ressalta a importância de os professores incentivarem os jovens às práticas de leitura",
+    "(b) critica pesquisas tradicionais que atribuem a falta de leitura à precariedade de bibliotecas.",
+    "(c) rebate a ideia de que as políticas educacionais são eficazes no combate à crise de leitura",
+    "(d) questiona a existência de uma crise de leitura com base nos dados de pesquisas acadêmicas."
+    ],
+    "correct_answer": "(d) questiona a existência de uma crise de leitura com base nos dados de pesquisas acadêmicas."
+    },
+
+    {
+        "image": "../src/assets/pergunta08.png",
+    "number": 8,
+    "question": "O Surrealismo configurou-se como uma das vanguardas artísticas europeias do início do século XX. René Magritte, pintor belga, apresenta elementos dessa vanguarda em suas produções. Um traço do Surrealismo presente nessa pintura é o(a):",
+    
+    "answers": [
+    "(a)  justaposição de elementos díspares, observada na imagem do homem no espelho",
+    "(b) crítica ao passadismo, exposta na dupla imagem do homem olhando sempre para frente",
+    "(c) construção de perspectiva, apresentada na sobreposição de planos visuais.",
+    "(d)  procedimento de colagem, identificado no reflexo do livro no espelho"    ],
+    "correct_answer":"(a)  justaposição de elementos díspares, observada na imagem do homem no espelho"    
+
+    },
+    {
+        "image": "../src/assets/pergunta09.png",
+    "number": 9,
+    "question": "A poesia é marcada pela recriação do objeto por meio da linguagem, sem necessariamente explicá-lo. Nesse fragmento de João Cabral de Melo Neto, poeta da geração de 1945, o sujeito lírico propõe a recriação poética de",
+    "answers": [
+    "(a) uma palavra, a partir de imagens com as quais ela pode ser comparada, a fim de assumir novos significados.",
+    "(b)  um urinol, em referência às artes visuais ligadas às vanguardas do início do século XX.",
+    "(c) uma ave, que compõe, com seus movimentos, uma imagem historicamente ligada à palavra poética.",
+    "(d) um tecido, visto que sua composição depende de elementos intrínsecos ao eu lírico"
+],
+    "correct_answer":  "(a) uma palavra, a partir de imagens com as quais ela pode ser comparada, a fim de assumir novos significados."
+
+    },
+    {
+     "image": "../src/assets/pergunta10.png",
+    "number": 10,
+    "question": "No heredograma, os símbolos preenchidos representam pessoas portadoras de um tipo raro de doença genética. Os homens são representados pelos quadrados e as mulheres, pelos círculos. Qual é o padrão de herança observado para essa doença?",
+    "answers": [
+    "(a) Dominante autossômico, pois a doença aparece em ambos os sexos",
+    "(b) Recessivo ligado ao sexo, pois não ocorre a transmissão do pai para os filhos",
+    "(c) Em 'Produz também delicados desenhos...'(l.4/5), a ausência de elemento de retomada antes do verbo dificulta a identificação do sujeito",
+    "(d) Dominante ligado ao sexo, pois todas as filhas de homens afetados também apresentam a doença."
+],
+    "correct_answer": "(d) Dominante ligado ao sexo, pois todas as filhas de homens afetados também apresentam a doença."
+
+    }
+    ]

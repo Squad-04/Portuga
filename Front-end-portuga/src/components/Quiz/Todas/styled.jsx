@@ -30,6 +30,20 @@ export const QuizUIX = styled.div`
             
         }
     }
+    .container-final{
+        border: 1px solid rgb(99, 173, 99);
+        border-radius: 7px;
+        box-shadow: 10px 10px 15px rgb(0 0 0 / 18%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 25px;
+        height: auto;
+        margin: 80px 70px;
+        background-color: #FFFF;
+        gap: 40px;
+
+    }
 
     .btn-group{
             width: 20rem;
@@ -47,4 +61,12 @@ export const QuizUIX = styled.div`
         margin: 0px 20px;
     }
 
+`;
+export const Alternatives = styled.div`
+
+    .correct{
+        background-color: #68ec68
+    }
+
+    
 `;

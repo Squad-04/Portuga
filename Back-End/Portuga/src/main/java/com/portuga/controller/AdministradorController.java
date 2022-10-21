@@ -33,19 +33,19 @@ public class AdministradorController {
 	}
 	
 	@DeleteMapping("{id}")
-	public ResponseEntity<String> deletarAdm(@PathVariable("id_adm") Long id){
+	public ResponseEntity<String> deletarAdm(@PathVariable("id") Long id){
 		service.deletarAdm(id);
 		
 		return new ResponseEntity<String>("Admnistrador Deletado.", HttpStatus.OK);
 	}
 	
 	@PutMapping("{id}")
-	public ResponseEntity<Administrador> atualizarAdm(@PathVariable("id_adm") Long id, Administrador administrador){
+	public ResponseEntity<Administrador> atualizarAdm(@PathVariable("id") Long id, @RequestBody Administrador administrador){
 		return new ResponseEntity<Administrador>(service.atualizarAdm(administrador, id), HttpStatus.OK);
 	}
 	
 	@GetMapping("{id}")
-	public ResponseEntity<Administrador> selecionarAdmPorId(@PathVariable("id_adm") Long AdmId){
+	public ResponseEntity<Administrador> selecionarAdmPorId(@PathVariable("id") Long AdmId){
 		return new ResponseEntity<Administrador>(service.selecionarAdmPorId(AdmId), HttpStatus.OK);
 	}
 	

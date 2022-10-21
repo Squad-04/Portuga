@@ -13,15 +13,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name="usuario")
+@Table(name="formulario")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Usuario {
+public class Formulario {
 	
 	@Id
-	@Column(name="id_usuario")
+	@Column(name="id_opiniao")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
@@ -29,22 +29,17 @@ public class Usuario {
 	private String nome;
 	
 	@Column
-	private String email;
+	private Integer idade;
+	
+	@Column(name="avaliacao_plataforma")
+	private String avaliacaoPlataforma;
+	
+	@Column(name="avaliacao_simulado")
+	private String avaliacaoSimulado;
 	
 	@Column
-	private String endereco;
+	private String indicaria;
 	
 	@Column
-	private String cidade;
-	
-	@Column
-	private String estado;
-	
-	@Column
-	private Integer numero;
-	
-	@Column
-	private String senha;
-	
-
+	private String mensagem;
 }

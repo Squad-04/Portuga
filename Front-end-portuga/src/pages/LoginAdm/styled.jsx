@@ -3,8 +3,9 @@ export const LoginUIX = styled.div`
      display: flex;
     justify-content: center;
     align-items: center;  
-    background-image: radial-gradient(circle at 50% 50%, #a4e0c8 0, #8ed5c1 16.67%, #6dc4b5 33.33%, #3aaea4 50%, #009895 66.67%, #00878d 83.33%, #007c8b 100%);
+    background-color: rgb(43, 143, 69);
     height:100vh;
+
 
 
     main{
@@ -24,6 +25,7 @@ export const LoginUIX = styled.div`
 .cadastro {
     padding: 10px;
     margin: 2rem;
+    flex-direction: column;
 
     h1{
         display: flex;
@@ -83,13 +85,5 @@ export const LoginUIX = styled.div`
     text-decoration: none;
     color: white;
 }
-
-#botaoAdm{
-    position: fixed;
-    bottom: 0;
-    width: 20%;
-    text-decoration: none;
-    color: green;
-}
-
 `;
+

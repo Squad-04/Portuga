@@ -1,8 +1,8 @@
  import NavMenu from '../../components/navbar';
 import Footer from '../../components/Footer';
 
-import icone from '../../assets/livro_icone.png';
-import lupa from '../../assets/lupa-icon.png'
+import icone from '../../imagens/livro_icone.png';
+import lupa from '../../imagens/lupa-icon.png'
 
 import './styled.css';
 import { Link } from 'react-router-dom';
@@ -30,10 +30,10 @@ import { Link } from 'react-router-dom';
                     </div>
                     <div className="col-sm-4">
                         <button type="button" className="btn-secondary btn-lg btn-block" disabled>Categorias</button>
-                        <Link className="btn btn-success btn-sm btn-block" to="/quiz/todas" target="_self" role="button">Todas</Link>
-                        <Link className="btn btn-success btn-sm btn-block" to="/quiz/provas-enem" role="button" >Provas do Enem</Link>
-                        <Link className="btn btn-success btn-sm btn-block"  to="/quiz/concurso-publico" target="_self" role="button">Concursos Públicos</Link>
-                        <Link className="btn btn-success btn-sm btn-block"  to="/quiz/temas-diversos" role="button">Temas Diversos</Link>
+                        <Link className="btn btn-success btn-sm btn-block" to="/quiz" target="_self" role="button">Todas</Link>
+                        <Link className="btn btn-success btn-sm btn-block" target="_self" role="button" >Provas do Enem</Link>
+                        <Link className="btn btn-success btn-sm btn-block"  target="_self" role="button">Concursos Públicos</Link>
+                        <Link className="btn btn-success btn-sm btn-block"  target="_self" role="button">Temas Diversos</Link>
 
                     </div>
                 </div>

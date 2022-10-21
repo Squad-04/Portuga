@@ -1,0 +1,10 @@
+#cadSimulado{
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: row;
+        
+}

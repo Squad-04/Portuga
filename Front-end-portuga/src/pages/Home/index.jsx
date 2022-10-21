@@ -1,13 +1,13 @@
 import SectionCard from "../../components/SectionCard";
 import NavMenu from "../../components/navbar";
 
-import icone from '../../assets/livro_icone.png';
-import lupa from '../../assets/lupa-icon.png'
-import binoculo from '../../assets/binoculo-icon.png';
-import notbook from '../../assets/notebook-icon.png';
-import livro from '../../assets/livro2-icon.png'
-import home from '../../assets/home.jpg'
-import doação from '../../assets/notebook-icon.png'
+import icone from '../../imagens/livro_icone.png';
+import lupa from '../../imagens/lupa-icon.png'
+import binoculo from '../../imagens/binoculo-icon.png';
+import notbook from '../../imagens/notebook-icon.png';
+import livro from '../../imagens/livro2-icon.png'
+import home from '../../imagens/home.jpg'
+import doação from '../../imagens/notebook-icon.png'
 
 import CardUs from "../../components/CardUs";
 

@@ -1,0 +1,11 @@
+#aviso{
+    background-color: rgb(43, 143, 69);
+    position:fixed;
+    top:0px;
+    left: 370px;
+    display: flex;
+}
+
+#texto{
+    font-size: medium;
+}

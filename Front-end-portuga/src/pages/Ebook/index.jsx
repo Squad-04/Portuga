@@ -1,15 +1,15 @@
 import NavMenu from "../../components/navbar";
 import EbookCard from "../../components/EbookCard";
 
-import Virgem from '../../assets/avirger.jpg'
-import Herry from '../../assets/herry.jpg';
-import Estrelas from '../../assets/aculpaDasEstrelas.jpg';
-import Capitao from '../../assets/capitãesDaAreia.jpg';
-import anneFrank from '../../assets/anneFrank.jpg';
-import Mulheres from '../../assets/MulheresLobos.jpg';
+import Virgem from '../../imagens/avirger.jpg'
+import Herry from '../../imagens/herry.jpg';
+import Estrelas from '../../imagens/aculpaDasEstrelas.jpg';
+import Capitao from '../../imagens/capitãesDaAreia.jpg';
+import anneFrank from '../../imagens/anneFrank.jpg';
+import Mulheres from '../../imagens/MulheresLobos.jpg';
 
-import icone from '../../assets/livro_icone.png';
-import lupa from '../../assets/lupa-icon.png'
+import icone from '../../imagens/livro_icone.png';
+import lupa from '../../imagens/lupa-icon.png'
 
 import { EbookUIX } from "./styled";
 import MenuSide from "../../components/MenuSide";

@@ -1,0 +1,57 @@
+{
+  "CommentList": [
+    {
+      "id": 1,
+      "comment": "Otimo questionario, parabéns squad 4!!",
+      "commentId": 1,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "comment": "Otimo questionario",
+      "comments": 2,
+      "userId": 2
+    },
+    {
+      "userId": 1,
+      "comment": "Obrigado pelas explicações!",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "comment": "oi",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "comment": "oi",
+      "newComment": "",
+      "parentId": 1,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "comment": "teste",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "comment": "teste2",
+      "newComment": "",
+      "parentId": 1,
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Phillip Jacobs",
+      "avatarUrl": "https://randomuser.me/api/portraits/men/64.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Todd Mitchell",
+      "avatarUrl": "https://randomuser.me/api/portraits/men/16.jpg"
+    }
+  ]
+}

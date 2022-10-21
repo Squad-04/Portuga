@@ -1,0 +1,9 @@
+.comentario-form {
+    margin-top: 40px;
+}
+
+.comentario-form textarea{
+    border-radius: 4px;
+    border: solid 1px #AAAAAA;
+    width: 100%;
+}

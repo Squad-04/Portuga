@@ -1,0 +1,32 @@
+.AdmNav {
+    width: 200px;
+}
+
+.listaAdm:hover {
+    background-color: rgb(6, 150, 35);
+    color: white;
+}
+
+.listaAdm {
+    width: 400px;
+    height: 50px;
+    text-align: center;
+}
+
+#divisoria {
+    height: 2px;
+    margin: 0;
+}
+
+#admLogado {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.horizontal {
+    width: 1000px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+}

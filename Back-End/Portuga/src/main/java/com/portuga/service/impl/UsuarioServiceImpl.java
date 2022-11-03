@@ -1,6 +1,7 @@
 package com.portuga.service.impl;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,27 +25,30 @@ public class UsuarioServiceImpl implements UsuarioService{
 	}
 	
 	@Override
-	public Optional<Usuario> selecionarPorId(Long id){
-		return repositorio.findById(id);
+	public Usuario selecionarPorId(Long id){
+		
+		return repositorio.findById(id).orElseThrow(() -> new ErroMensagemException("Usuario não encontrado."));
 	}
 	
 	@Override
 	public void deletarUsuario(Long id) {
-		repositorio.findById(id).orElseThrow(() -> 
-		new ErroMensagemException("Usuário não encontrado"));
-		
+		repositorio.findById(id).orElseThrow(() -> new 
+				ErroMensagemException("Usuário não encontrado."));
 		repositorio.deleteById(id);
 	}
 	
 	@Override
 	public Usuario atualizarUsuario(Usuario usuario, Long id) {
 		Usuario userAtual = repositorio.findById(id).orElseThrow(
-				() -> new ErroMensagemException("Usuário não encontradr"));
+				() -> new ErroMensagemException("Usuário não encontrado"));
 		
 		userAtual.setNome(usuario.getNome());
 		userAtual.setEmail(usuario.getEmail());
 		userAtual.setSenha(usuario.getSenha());
 		userAtual.setEndereco(usuario.getEndereco());
+		userAtual.setCidade(usuario.getCidade());
+		userAtual.setEstado(usuario.getEstado());
+		userAtual.setNumero(usuario.getNumero());
 		
 		repositorio.save(userAtual);
 		return userAtual;
@@ -77,6 +81,24 @@ public class UsuarioServiceImpl implements UsuarioService{
 	@Override 
 	public List<Usuario> selecionarUsuarios(){
 		return repositorio.findAll();	}
+	
+	@Override
+	public Usuario atualizarPorEmail(Usuario usuario, String email) {
+		Usuario usuarioAtual = repositorio.findByEmail(email).orElseThrow(
+				() -> new ErroMensagemException("Usuário não encontrado"));
+
+		usuarioAtual.setNome(usuario.getNome());
+		usuarioAtual.setEmail(usuario.getEmail());
+		usuarioAtual.setSenha(usuario.getSenha());
+		usuarioAtual.setEndereco(usuario.getEndereco());
+		usuarioAtual.setCidade(usuario.getCidade());
+		usuarioAtual.setEstado(usuario.getEstado());
+		usuarioAtual.setNumero(usuario.getNumero());
+		
+		repositorio.save(usuarioAtual);
+		return usuarioAtual;
+		
+	}
 	
 	
 }

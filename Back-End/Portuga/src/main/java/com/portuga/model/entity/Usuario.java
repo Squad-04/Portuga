@@ -23,7 +23,7 @@ public class Usuario {
 	@Id
 	@Column(name="id_usuario")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id_usuario;
+	private Long id;
 	
 	@Column
 	private String nome;
@@ -32,8 +32,19 @@ public class Usuario {
 	private String email;
 	
 	@Column
-	private String senha;
+	private String endereco;
 	
 	@Column
-	private String endereco;
+	private String cidade;
+	
+	@Column
+	private String estado;
+	
+	@Column
+	private Integer numero;
+	
+	@Column
+	private String senha;
+	
+
 }

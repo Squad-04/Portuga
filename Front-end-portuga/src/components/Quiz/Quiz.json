@@ -1,0 +1,132 @@
+[
+    {
+     "image": "../src/assets/quiz1.png",
+    "number": 1,
+    "question": "Pela análise do conteúdo, constata-se que essa campanha publicitária tem como função social:",
+    "answers": [
+    "(a) propagar a imagem positiva do Ministério Público.",
+    "(b) conscientizar a população que direitos implicam deveres.",
+    "(c) coibir violações de direitos humanos nos meios de comunicação.",
+    "(d) divulgar políticas sociais que combatem a intolerância preconceito.",
+    "(e) instruir as pessoas sobre a forma correta de expressão nas redes sociais"
+],
+    "correct_answer": "(a) propagar a imagem positiva do Ministério Público."
+    },
+
+    {
+    "image": "../src/assets/lupa-icon.png",
+    "number": 2,
+    "question": "(ENEM 2021) Um dos exames clínicos mais tradicionais para medir a capacidade reflexa dos indivíduos é o exame do reflexo patelar. Esse exame consiste na estimulação da patela, um pequeno osso localizado na parte anterior da articulação do joelho, com um pequeno martelo. A resposta reflexa ao estímulo é caracterizada pelo levantamento da perna em que o estímulo foi aplicado. Qual região específica do sistema nervoso coordena essa resposta?",
+
+    "answers": [
+    "(a) Ponte.",
+    "(b) Medula",
+    "(c) Cerebelo",
+    "(d) Hipotálamo"
+    ],
+    "correct_answer": "(b) Medula"
+    },
+
+    {
+    "image": "../src/assets/lupa-icon.png",
+    "number": 3,
+    "question": "Os búfalos são animais considerados rústicos pelos criadores e, por isso, são deixados no campo sem controle reprodutivo. Por causa desse tipo de criação, a consanguinidade é favorecida, proporcionando o aparecimento de enfermidades, como o albinismo, defeitos cardíacos, entre outros. Separar os animais de forma adequada minimizaria a ocorrência desses problemas. Qual procedimento biotecnológico prévio é recomendado nessa situação?",
+    
+    "answers": [
+    "(a) Transgenia",
+    "(b) Terapia gênica",
+    "(c) acina de DNA",
+    "(d) Mapeamento genético"
+    ],
+    "correct_answer": "(d) Mapeamento genético"
+    },
+
+    {
+    "image": "../src/assets/lupa-icon.png",
+    "number": 4,
+    "question": "(ENEM 2021) A simples atitude de não jogar direto no lixo ou no ralo da pia o óleo de cozinha usado pode contribuir para a redução da poluição ambiental. Mas o que fazer com o óleo vegetal que não será mais usado? Não existe um modelo ideal de descarte, mas uma alternativa simples tem sido reaproveitá-lo para fazer sabão. Para isso, são necessários, além do próprio óleo, água e soda cáustica. Com base no texto, a reação química que permite o reaproveitamento do óleo vegetal é denominada",
+    "answers": [
+    "(a) Redução",
+    "(b) saponificação",
+    "(c) esterificação",
+    "(d) substituição"
+    ],
+    "correct_answer": "(b) saponificação"
+    },
+    {
+    "image": "../src/assets/lupa-icon.png",
+    "number": 5,
+    "question": " O rompimento da barragem de rejeitos de mineração no município mineiro de Mariana e o derramamento deprodutos tóxicos nas águas do Rio Doce, ocorridos em 2015, ainda têm consequências para os organismos que habitam o Parque Nacional Marinho de Abrolhos, localizado a mais de 1 000 quilômetros de distância. Esse desastre ambiental afetou o fitoplâncton, as esponjas, as algas macroscópicas, os peixes herbívoros e os golfinhos. Concentrações mais elevadas dos compostos citados são encontradas em",
+    "answers": [
+    "(a) golfinhos",
+    "(b) fitoplâncton",
+    "(c) peixes herbívoros",
+    "(d) algas macroscópicas"
+    ],
+    "correct_answer": "(a) golfinhos"
+    },
+    {
+    "image": "../src/assets/lupa-icon.png",
+    "number": 6,
+    "question": "Nas angiospermas, além da fertilização da oosfera, existe uma segunda fertilização que resulta num tecido triploide. Essa segunda fertilização foi importante evolutivamente, pois viabilizou a formação de um tecido de",
+
+    "answers": [
+    "(a) nutrição para o fruto",
+    "(b) reserva para o embrião",
+    "(c) revestimento para a semente",
+    "(d) vascularização para a planta jovem"
+    ],
+    "correct_answer": "(b) reserva para o embrião"
+    },
+    {
+    "image": "../src/assets/Evolucao.webp",
+    "number": 7,
+    "question": "A palavra inglesa “involution” traduz-se como involução ou regressão. A construção da imagem com base na combinação do verbal com o não verbal revela a intenção de:",
+    "answers": [
+    "(a) Denunciar o retrocesso da humanidade",
+    "(b) Criticar o consumo de bebida alcoólica pelos humanos",
+    "(c) Elogiar a teoria da evolução humana pela seleção natural",
+    "(d) Fazer um trocadilho com as palavras inovações e involução"
+    ],
+    "correct_answer": "(b) Criticar o consumo de bebida alcoólica pelos humanos"
+    },
+
+    {
+        "image": "../src/assets/1950.webp",
+    "number": 8,
+    "question": "Considerando o gênero propaganda institucional e o paralelo histórico traçado pela autora, é correto afirmar que o slogan do atual governo fracassou porque: ",
+    "answers": [
+    "(a) O uso da vírgula provocou uma leitura negativa do trecho que alude ao slogan da década de 1950",
+    "(b) A mensagem projeto pelo slogan anterior era mais clara, direta, e não exigia o uso da vírgula",
+    "(c) A alusão ao slogan anterior afasta o público jovem e provoca a perda de seu poder persuasivo",
+    "(d) O duplo sentido do verbo 'voltar' gerou uma mensagem que se afasta daquela projetada pelo slogan"    ],
+    "correct_answer":"(d) O duplo sentido do verbo 'voltar' gerou uma mensagem que se afasta daquela projetada pelo slogan"    
+
+    },
+    {
+        "image": "../src/assets/FranciscoAurélio.webp",
+    "number": 9,
+    "question": "Segundo se infere do discurso de Francisco Aurélio Ribeiro, o capixaba em geral é acometido de:",
+    "answers": [
+    "(a) Idiotismo latinoamericano, que se propõe e analtecer a produção local sem reservas, e ponto de deixar de aplicar juizos de valor em rel",
+    "(b) Complexo de vira-lata, que consiste em desmerecer a produção local, subestimando-a frente ás manifestações culturais de outros estados",
+    "(c) Filosofia de botequim, que consiste em lidar de modo superficial com as complexas abordagens da literatura local",
+    "(d) Visão local com consciência universal, na medida em que reconhece o alcance das produções literárias capixabas"
+],
+    "correct_answer": "(b) Complexo de vira-lata, que consiste em desmerecer a produção local, subestimando-a frente ás manifestações culturais de outros estados"
+
+    },
+    {
+     "image": "../src/assets/elementosDeCoesão.webp",
+    "number": 10,
+    "question": "Sobre a presença de elementos de coesão no texto e sua contribuição para a percepção semântica, assinale a única consideração adequada:",
+    "answers": [
+    "(a) Em 'Shirley Paes Leme tem no desenho a alma de sua obra', o referente de 'sua obra' é 'a peça em homenagem à companhia de dança goiana",
+    "(b) Em 'Os galhos retorcidos e enegrecidos...' (l. 2/4), o conector 'ora' indica que os traços a lápis não conseguem ser classificados idealmente",
+    "(c) Em 'Produz também delicados desenhos...'(l.4/5), a ausência de elemento de retomada antes do verbo dificulta a identificação do sujeito",
+    "(d) Em 'A obra de Shirley tem linhas-galhos que ...(i.12/14), a palavra 'que' é elemento de retomada, cujo referente está e, 'linhas-galhos'"
+],
+    "correct_answer": "(d) Em 'A obra de Shirley tem linhas-galhos que ...(i.12/14), a palavra 'que' é elemento de retomada, cujo referente está e, 'linhas-galhos'"
+
+    }
+    ]

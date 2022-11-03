@@ -22,7 +22,7 @@ public class Administrador {
 	@Id
 	@Column(name="id_adm")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id_adm;
+	private Long id;
 	
 	@Column
 	private String nome;

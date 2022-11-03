@@ -65,7 +65,6 @@ export const LoginUIX = styled.div`
     margin: 4px;
     padding: 35px;
     justify-content: center;
-    border: solid red;
 }
 
 .help a{
@@ -78,6 +77,19 @@ export const LoginUIX = styled.div`
 
 .clicandoAqui {
     color: white;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+#botaoAdm{
+    position: fixed;
+    bottom: 0;
+    width: 20%;
+    text-decoration: none;
+    color: green;
 }
 
 `;

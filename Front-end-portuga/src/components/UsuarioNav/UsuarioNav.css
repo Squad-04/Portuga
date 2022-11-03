@@ -1,0 +1,9 @@
+#navbar{
+    width: 200px;
+}
+
+.lista:hover{
+    background-color: rgb(6, 150, 35);
+    color: white;
+}
+

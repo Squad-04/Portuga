@@ -27,31 +27,26 @@ public class UsuarioController {
 	@Autowired
 	private UsuarioServiceImpl service;
 	
-	@GetMapping("/home")
-	public String hello() { 
-		return "Hello Wolrd";
-	}
-	
 	@PostMapping
 	public ResponseEntity<Usuario> salvarUsuario(@RequestBody Usuario usuario){
 		return new ResponseEntity<Usuario>(service.salvarUsuario(usuario), HttpStatus.CREATED); 
 	}
 	
 	@DeleteMapping("{id}")
-	public ResponseEntity<String> deletarUsuario(@PathVariable("id_usuario") Long id){
+	public ResponseEntity deletarUsuario(@PathVariable("id") Long id){
 		service.deletarUsuario(id);
-		
-		return new ResponseEntity<String>("Usuário Deletado", HttpStatus.OK);
+		return new ResponseEntity<String> ("Usuário Deletado.", HttpStatus.OK);
 	}
 	
+	
 	@PutMapping("{id}")
-	public ResponseEntity<Usuario> atualizarUsuario(@PathVariable("id_usuario") Long id, @RequestBody Usuario usuario){
+	public ResponseEntity<Usuario> atualizarUsuario(@PathVariable("id") Long id, @RequestBody Usuario usuario){
 		return new ResponseEntity<Usuario>(service.atualizarUsuario(usuario, id), HttpStatus.OK);
 	}
 	
 	@GetMapping("{id}")
-	public  ResponseEntity<Usuario> selecionarUsuario(@PathVariable("id_usuario") Long UsuarioId){
-		return new ResponseEntity<Usuario>(HttpStatus.OK);
+	public  ResponseEntity<Usuario> selecionarUsuario(@PathVariable("id") Long UsuarioId){
+		return new ResponseEntity<Usuario>(service.selecionarPorId(UsuarioId), HttpStatus.OK);
 	}
 	
 	@GetMapping
@@ -70,5 +65,9 @@ public class UsuarioController {
 		}
 	}
 	
+	@PutMapping("email/{email}")
+	public ResponseEntity<Usuario> atualizarPorEmail(@PathVariable("email") String email, @RequestBody Usuario usuario){
+		return new ResponseEntity<Usuario>(service.atualizarPorEmail(usuario, email), HttpStatus.OK);
+	}
 	
 }

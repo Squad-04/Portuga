@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Comentarios from "../../Model/comentarios/comentarios";
 import ListaComentarios from "./ListaComentarios/listaComentarios";
 import useApi from '../../Quiz/QuizComentarios/ApiComentarios/useApi'
-import './comentarios.css';
+import './styles.css';
 
-const ComentariosQuiz = ({ comments, onClose }) => {
+const ComentariosQuiz = ({ comments, isOpen, onClickClose }) => {
+    console.log('isopen', isOpen)
     const [newComment, setNewComment] = useState('');
     const [load, loadInfo] = useApi({
         url: '/CommentList',
@@ -18,9 +18,9 @@ const ComentariosQuiz = ({ comments, onClose }) => {
         url: '/CommentList',
         method: 'POST',
     });
-
     useEffect(() => {
         load();
+
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
@@ -54,21 +54,29 @@ const ComentariosQuiz = ({ comments, onClose }) => {
     }
 
     return (
-        <Comentarios  isOpen onClickClose={onClose}>
-            <form className="comentario-form" onSubmit={onSubmit}>
-                <textarea placeholder="comentar..."
-                    onChange={(ev) =>
-                        setNewComment(ev.target.value)
-                    }
-                    value={newComment}
-                />
-                <button type="submit" disabled={sendCommentInfo.loading}>
-                    {sendCommentInfo.loading ? 'Enviando...' : 'Enviar'}
-                </button>
-            </form>
-            <ListaComentarios comments={loadInfo.data} sendComment={sendAnswer} />
-        </Comentarios>
-    );
+        <>
+            {isOpen &&
+                <div className="ui-modal-fundo">
+                    <div className="ui-modal">
+                        <button className="ui-modal-fecha-button" type="button" onClick={(onClickClose)}>x</button>
+
+                        <form className="comentario-form" onSubmit={onSubmit}>
+                            <textarea placeholder="comentar..."
+                                onChange={(ev) =>
+                                    setNewComment(ev.target.value)
+                                }
+                                value={newComment}
+                            />
+                            <button type="submit" disabled={sendCommentInfo.loading}>
+                                {sendCommentInfo.loading ? 'Enviando...' : 'Enviar'}
+                            </button>
+                        </form>
+                        <ListaComentarios comments={loadInfo.data} sendComment={sendAnswer} />
+                    </div>
+                </div>
+            }
+        </>
+    )
 };
 
 export default ComentariosQuiz;

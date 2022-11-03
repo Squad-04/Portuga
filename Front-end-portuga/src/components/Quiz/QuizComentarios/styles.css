@@ -1,4 +1,4 @@
-.ui-modal{
+.ui-modal {
     background-color: #fff;
     border-radius: 4px;
     max-width: 900px;
@@ -6,13 +6,13 @@
     padding: 15px;
 }
 
-.ui-modal-fundo{
+.ui-modal-fundo {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .ui-modal-fecha-button {
@@ -20,3 +20,14 @@
     background-color: unset;
     border: unset;
 
+}
+
+.comentario-form {
+    margin-top: 40px;
+}
+
+.comentario-form textarea {
+    border-radius: 4px;
+    border: 1px solid #AAAAAA;
+    width: 100%;
+}

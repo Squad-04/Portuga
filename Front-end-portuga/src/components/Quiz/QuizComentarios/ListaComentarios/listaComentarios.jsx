@@ -39,7 +39,9 @@ const ListaComentarios = ({ comments, sendComment }) => {
                 <li className="avatar-item">
                     <img src={item.user.avatarUrl} alt={`foto de ${item.user.name}`} className='avatar-img' />
                     <div className="avatar-info">
-                        <span className="avatar-name">{item.user.nome}</span>
+                        <span className="avatar-name">
+                            {item.user.nome}
+                            </span>
                         <p>{item.comment} </p>
                         <button type="button"
                         onClick={() =>{
@@ -48,6 +50,7 @@ const ListaComentarios = ({ comments, sendComment }) => {
                             }}
                          className="Response">Responder
                          </button>
+                         
                         {activeCommentBox === item.id && (
                         <div className="Response-text">
                             <textarea value={comment} onChange={(ev) => setComment(ev.target.value)}

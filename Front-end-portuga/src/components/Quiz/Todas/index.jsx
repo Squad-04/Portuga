@@ -11,21 +11,25 @@ import temasDiversos from '../questions/temas-diversos.json'
 import concursoPublico from '../questions/concurso-publico.json'
 import { useState } from 'react';
 import { useEffect } from 'react';
+import Comentarios from '../../Model/comentarios/comentarios';
+import ListaComentarios from '../QuizComentarios/ListaComentarios/listaComentarios';
+import ComentariosQuiz from '../QuizComentarios/comentarios';
+import { COMPILER_NAMES } from 'next/dist/shared/lib/constants';
 
 
 const getQuestions = (type) => {
-  if(type === 'todas') {
-    return todas
-  }
-  if(type === 'concurso-publico') {
-    return concursoPublico
-  }
-  if(type === 'provas-enem') {
-    return provasEnem
-  }
-  if(type === 'temas-diversos') {
-    return temasDiversos
-  }
+    if (type === 'todas') {
+        return todas
+    }
+    if (type === 'concurso-publico') {
+        return concursoPublico
+    }
+    if (type === 'provas-enem') {
+        return provasEnem
+    }
+    if (type === 'temas-diversos') {
+        return temasDiversos
+    }
 }
 
 
@@ -33,8 +37,9 @@ export function Quiz() {
 
     const { type } = useParams()
 
-
     const navigate = useNavigate('');
+    const [NewComment, setComment] = useState(null);
+    const [showModal, setShowModal] = useState(false);
     const [correctAnswer, setCorrectAnswer] = useState(0);
     const [correctScore, setCorrectScore] = useState(0);
     const [wrongScore, setWrongScore] = useState(0);
@@ -42,26 +47,24 @@ export function Quiz() {
     const [answer, setAnswer] = useState("");
 
     useEffect(() => {
-        if(questions[0].number === 10) {
-            navigate('/final', { state: { correctScore, wrongScore }})
+        if (questions[0].number === 10) {
+            navigate('/final', { state: { correctScore, wrongScore } })
         }
-    }, [correctScore, wrongScore])
+    }, [correctScore, wrongScore, showModal])
 
     const handleAnswer = () => {
 
-        setCorrectAnswer( questions[0].correct_answer)
+        setCorrectAnswer(questions[0].correct_answer)
 
-
-        
-            if (answer === questions[0].correct_answer) {
-                setCorrectScore(correctScore + 1)
-            } else {
-                setWrongScore(wrongScore + 1)
-            }
-            if(questions[0].number !== 10){
+        if (answer === questions[0].correct_answer) {
+            setCorrectScore(correctScore + 1)
+        } else {
+            setWrongScore(wrongScore + 1)
+        }
+        if (questions[0].number !== 10) {
             const newQuestions = questions.filter((item) => item.number !== questions[0].number)
             setTimeout(() => {
-            setQuestions(newQuestions);
+                setQuestions(newQuestions);
 
             }, 1000)
         }
@@ -83,16 +86,19 @@ export function Quiz() {
                     <div className="options">
                         {questions[0].answers.map(item => (
                             <label>
-                                <div style={{ display:'flex' }}><input type="radio" name="escolha" value={item} onClick={(e) => setAnswer(e.currentTarget.value)} /><Alternatives><span className={`${correctAnswer === item ? 'correct' : ''}`}>&nbsp;{item}</span></Alternatives></div>
+                                <div style={{ display: 'flex' }}><input type="radio" name="escolha" value={item} onClick={(e) => setAnswer(e.currentTarget.value)} /><Alternatives><span className={`${correctAnswer === item ? 'correct' : ''}`}>&nbsp;{item}</span></Alternatives></div>
                             </label>
                         ))}
                     </div>
 
                     <div className="btn-group">
                         <button className="btn btn-success btn" onClick={() => handleAnswer()}>Responder</button>
+
+                        <button className="btn btn-success btn" onClick={() => setShowModal(true)}>comentarios</button>
                     </div>
                 </div>
             </main>
+            <ComentariosQuiz isOpen={showModal} onClickClose={() => setShowModal(false)} />
             <Footer />
         </QuizUIX>
 

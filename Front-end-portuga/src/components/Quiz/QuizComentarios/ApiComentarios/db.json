@@ -20,25 +20,27 @@
     {
       "userId": 1,
       "comment": "oi",
+      "newComment": "",
+      "parentId": 1,
       "id": 4
     },
     {
       "userId": 1,
-      "comment": "oi",
+      "comment": "obrigado",
       "newComment": "",
       "parentId": 1,
       "id": 5
     },
     {
       "userId": 1,
-      "comment": "teste",
+      "comment": "oi",
+      "newComment": "",
+      "parentId": 1,
       "id": 6
     },
     {
       "userId": 1,
-      "comment": "teste2",
-      "newComment": "",
-      "parentId": 1,
+      "comment": "oi",
       "id": 7
     }
   ],

@@ -93,7 +93,6 @@ export function Quiz() {
 
                     <div className="btn-group">
                         <button className="btn btn-success btn" onClick={() => handleAnswer()}>Responder</button>
-
                         <button className="btn btn-success btn" onClick={() => setShowModal(true)}>comentarios</button>
                     </div>
                 </div>

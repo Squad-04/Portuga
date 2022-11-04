@@ -4,7 +4,6 @@ import useApi from '../../Quiz/QuizComentarios/ApiComentarios/useApi'
 import './styles.css';
 
 const ComentariosQuiz = ({ comments, isOpen, onClickClose }) => {
-    console.log('isopen', isOpen)
     const [newComment, setNewComment] = useState('');
     const [load, loadInfo] = useApi({
         url: '/CommentList',

@@ -46,16 +46,18 @@ const ListaComentarios = ({ comments, sendComment }) => {
                         <button type="button"
                         onClick={() =>{
                              setComment('');
-                            setActiveCommentBox(activeCommentBox === item.id ? null : item.id)
+                            setActiveCommentBox(
+                                activeCommentBox === item.id ? null : item.id);
                             }}
                          className="Response">Responder
                          </button>
-                         
+
                         {activeCommentBox === item.id && (
                         <div className="Response-text">
                             <textarea value={comment} onChange={(ev) => setComment(ev.target.value)}
                             />
-                            <button type="button" className="Response-text-button" 
+                            <button 
+                            type="button" className="Response-text-button" 
                             onClick={() => {
                                 sendComment(comment, item.id);
                                 setComment('');

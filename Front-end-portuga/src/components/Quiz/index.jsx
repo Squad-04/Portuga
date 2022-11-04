@@ -1,6 +1,7 @@
 import { QuizUIX } from './styled';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
+import ComentariosQuiz from '../Quiz/QuizComentarios/comentarios'
 //import { Link } from 'react-router-dom';
 
 import { useNavigate } from 'react-router-dom';
@@ -13,6 +14,7 @@ import { useState } from 'react';
 export function Quiz({ title, subtitle, photo }) {
 
     const navigate = useNavigate('');
+    const [showModal, setShowModal] = useState(false);
     const [correctAnswer, setCorrectAnswer] = useState(0);
     const [wrongAnswer, setWrongAnswer] = useState(0);
     const [questions, setQuestions] = useState(getQuestions);
@@ -60,9 +62,11 @@ export function Quiz({ title, subtitle, photo }) {
 
                     <div className="btn-group">
                         <button className="btn btn-success btn" onClick={() => handleAnswer()}>Responder</button>
+                        <button className="btn btn-success btn" onClick={() => setShowModal(true)}>comentarios</button>
                     </div>
                 </div>
             </main>
+            <ComentariosQuiz isOpen={showModal} onClickClose={() => setShowModal(false)} />
             <Footer />
         </QuizUIX>
 

@@ -16,7 +16,7 @@ function NavMenu({ photo, img }) {
 
         <div className="collapse navbar-collapse" id="menu">
           <ul className="navbar-nav">
-            <li className="nav-item"><Link className="nav-link" to='/'>Home</Link></li>
+            <li className="nav-item"><Link className="nav-link" to='/'>Home teste</Link></li>
             <li className="nav-item"><Link to='/desafio' className="nav-link">
               <img src={photo} width="20px" />
               Desafios Portuga

@@ -19,29 +19,10 @@
     },
     {
       "userId": 1,
-      "comment": "oi",
-      "newComment": "",
-      "parentId": 1,
-      "id": 4
-    },
-    {
-      "userId": 1,
       "comment": "obrigado",
       "newComment": "",
       "parentId": 1,
       "id": 5
-    },
-    {
-      "userId": 1,
-      "comment": "oi",
-      "newComment": "",
-      "parentId": 1,
-      "id": 6
-    },
-    {
-      "userId": 1,
-      "comment": "oi",
-      "id": 7
     }
   ],
   "users": [

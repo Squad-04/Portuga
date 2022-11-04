@@ -23,6 +23,13 @@
       "newComment": "",
       "parentId": 1,
       "id": 5
+    },
+    {
+      "userId": 1,
+      "comment": "teste",
+      "newComment": "",
+      "parentId": 5,
+      "id": 6
     }
   ],
   "users": [

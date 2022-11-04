@@ -52,6 +52,8 @@ const ComentariosQuiz = ({ comments, isOpen, onClickClose }) => {
         load({ quiety: true });
     }
 
+    
+
     return (
         <>
             {isOpen &&

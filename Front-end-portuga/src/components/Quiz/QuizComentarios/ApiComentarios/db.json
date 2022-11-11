@@ -26,14 +26,12 @@
     },
     {
       "userId": 1,
-      "comment": "atenção ",
+      "comment": "Otimas perguntas! muito bem feita ",
       "id": 6
     },
     {
       "userId": 1,
-      "comment": "atenção2",
-      "newComment": "",
-      "parentId": 6,
+      "comment": "oi",
       "id": 7
     }
   ],
@@ -41,12 +39,12 @@
     {
       "id": 1,
       "name": "Phillip Jacobs",
-      "avatarUrl": "https://randomuser.me/api/portraits/men/64.jpg"
+      "avatarUrl": "https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png"
     },
     {
       "id": 2,
       "name": "Todd Mitchell",
-      "avatarUrl": "https://randomuser.me/api/portraits/men/16.jpg"
+      "avatarUrl": "https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png"
     }
   ]
 }

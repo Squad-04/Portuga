@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "start": "json-server --watch db.json --port 5174"
+        "dev": "json-server --watch db.json --port 5174"
     },
     "dependencies": {
         "uuid": "^9.0.0"

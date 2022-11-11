@@ -1,25 +1,26 @@
 import Footer from "../../Footer";
-import { QuizUIX } from "./styled"; 
+import { QuizUIX } from "./styled";
 
 import { Link, useLocation } from "react-router-dom";
-export function Final(){
+
+export function Final(correctScore, wrongScore) {
     const location = useLocation()
-    console.log(location)
+    console.log(correctScore)
 
-    return( 
+    return (
         <div>
-            <QuizUIX> 
-            <main className="container-final">        
-            <h1>Obrigado por utilizar o portuga </h1>      
-                <h2>Você acertou  perguntas: { location.state.correctScore } </h2>
-                <h3>Você errou  perguntas: { location.state.wrongScore }</h3>
+            <QuizUIX>
+                <main className="container-final">
+                    <h1>Obrigado por utilizar o portuga </h1>
+                    <h2>Você acertou  perguntas: {location.correctScore} </h2>
+                    <h3>Você errou  perguntas: {location.wrongScore}</h3>
 
-                <div className="btn-group">
-                        <Link className="btn btn-success btn" to='/'>Voltar</Link>
+                    <div className="btn-group">
+                        <Link className="btn btn-success btn" to='/desafio'>Voltar</Link>
                     </div>
-            </main>
+                </main>
 
-            <Footer />
+                <Footer />
             </QuizUIX>
         </div>
     );

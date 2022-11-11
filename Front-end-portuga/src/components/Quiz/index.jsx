@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import getQuestions from './Quiz.json'
 import quiz from '../../imagens/quiz1.png';
 import { useState } from 'react';
+import { Final } from './Todas/final';
 
 
 export function Quiz({ title, subtitle, photo }) {
@@ -49,8 +50,7 @@ export function Quiz({ title, subtitle, photo }) {
 
         }
         else {
-            alert(`Respostas corretas: ${correctScore}, respostas erradas: ${wrongScore}`)
-            navigate('/desafio')
+            navigate('/final')
         }
     }
 

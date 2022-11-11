@@ -2,8 +2,10 @@
     background-color: #fff;
     border-radius: 4px;
     max-width: 900px;
+    max-height: 80%;
     margin: 80px auto 0 auto;
     padding: 15px;
+    overflow: scroll;
 }
 
 .ui-modal-fundo {
@@ -13,6 +15,7 @@
     bottom: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    
 }
 
 .ui-modal-fecha-button {

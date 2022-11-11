@@ -47,4 +47,11 @@ export const QuizUIX = styled.div`
         margin: 0px 20px;
     }
 
+    .correct-answer{
+        background-color: green;
+    }
+
+    .wrong-answer{
+        color: red;
+    }
 `;

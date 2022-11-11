@@ -1,39 +1,46 @@
-.ListaComentario{
+.ListaComentario {
     list-style: none;
     font-size: 14px;
     padding-left: 0;
 }
 
-.avatar-item{
+.avatar-item {
     display: flex;
 }
 
 .avatar-img {
     width: 49px;
-    height: 49px;
+    height: 50px;
     margin: 5px;
     margin-right: 15px;
     padding: 2px;
+    padding-top: 10px;
     border-radius: 49px;
 }
 
-.avatar-info{
+.avatar-info {
     width: 49em;
     border: solid 1px;
     border-radius: 0px 5px 5px 5px;
     margin: 5px;
 }
 
-.avatar-info p{
+.avatar-info div {
+    border: solid 1px;
+    border-radius: 4px 10px;
+    width: 100%;
+}
+
+.avatar-info p {
     margin: 5px;
     margin-bottom: 0%;
 }
 
-.avatar-name{
+.avatar-name {
     font-weight: 600;
 }
 
-.Response{
+.Response {
     margin: 2px;
     background-color: transparent;
     border: 0;
@@ -41,7 +48,7 @@
     padding: 0;
 }
 
-.Response-text{
+.Response-text {
     padding: 3px;
     margin-top: 10px;
     display: flex;
@@ -49,7 +56,7 @@
 
 }
 
-.Response-text-button{
+.Response-text-button {
     margin-left: 15px;
     background-color: transparent;
     height: 25px;

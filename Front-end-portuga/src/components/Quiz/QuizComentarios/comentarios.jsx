@@ -34,7 +34,7 @@ const ComentariosQuiz = ({ comments, isOpen, onClickClose }) => {
                 },
             });
             setNewComment('');
-            load();
+            load({ quiety: true});
         } catch (e) {
 
         }
@@ -67,6 +67,7 @@ const ComentariosQuiz = ({ comments, isOpen, onClickClose }) => {
                                     setNewComment(ev.target.value)
                                 }
                                 value={newComment}
+                                disabled={sendComment.loading}
                             />
                             <button type="submit" disabled={sendCommentInfo.loading}>
                                 {sendCommentInfo.loading ? 'Enviando...' : 'Enviar'}

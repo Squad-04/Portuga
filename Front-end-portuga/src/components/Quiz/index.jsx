@@ -2,14 +2,14 @@ import { QuizUIX } from './styled';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import ComentariosQuiz from '../Quiz/QuizComentarios/comentarios'
-//import { Link } from 'react-router-dom';
 
 import { useNavigate } from 'react-router-dom';
 
 import getQuestions from './Quiz.json'
-import quiz from '../../imagens/quiz1.png';
 import { useState } from 'react';
 import { Final } from './Todas/final';
+import QuestaoComentada from './QuestãoComentada/QuestaoComentada';
+import Explicações from './QuestãoComentada/QuestaoComentada';
 
 
 export function Quiz({ title, subtitle, photo }) {
@@ -21,15 +21,19 @@ export function Quiz({ title, subtitle, photo }) {
     const [questions, setQuestions] = useState(getQuestions);
     const [answer, setAnswer] = useState("");
     const [correctAnswer, setCorrectAnswer] = useState("");
-
+    const [state, setState] = useState(true)
+    const [visible, setVisible] = useState(false);
 
 
     const handleAnswer = () => {
+
 
         if (questions[0].number !== 10) {
             if (answer === questions[0].correct_answer) {
                 setCorrectScore(correctScore + 1)
                 setCorrectAnswer(questions[0].correct_answer);
+
+
 
             } else {
                 setWrongScore(wrongScore + 1)
@@ -42,18 +46,17 @@ export function Quiz({ title, subtitle, photo }) {
             setTimeout(() => {
                 const newQuestions = questions.filter((item) => item.number !== questions[0].number)
                 setQuestions(newQuestions);
+                state = (false);
                 setCorrectAnswer('');
                 const inputs = document.querySelectorAll('input[type=radio]');
                 inputs.forEach(element => element.checked = false);
                 inputs.forEach(element => element.disabled = false);
-            }, 2000)
-
+            }, 5000)
         }
         else {
             navigate('/final')
         }
     }
-
     return (
         <QuizUIX>
             <Navbar />
@@ -74,7 +77,6 @@ export function Quiz({ title, subtitle, photo }) {
                             </label>
                         ))}
                     </div>
-
                     {
                         correctAnswer !== '' && (
                             <div class={`alert alert-${answer === questions[0].correct_answer ? 'success' : 'danger'}`} role="alert">
@@ -82,14 +84,19 @@ export function Quiz({ title, subtitle, photo }) {
                             </div>
                         )
                     }
-
-
                     <div className="btn-group">
                         <button className="btn btn-success btn" onClick={() => handleAnswer()}>Responder</button>
                         <button className="btn btn-success btn" onClick={() => setShowModal(true)}>comentarios</button>
+                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#comentario" aria-expanded="false" onClick={() => setVisible(!visible)} disabled={state}>
+                            Explicação
+                        </button>
+
                     </div>
                 </div>
             </main>
+            {visible === true &&
+                <Explicações visible={visible} />
+            }
             <ComentariosQuiz isOpen={showModal} onClickClose={() => setShowModal(false)} />
             <Footer />
         </QuizUIX>

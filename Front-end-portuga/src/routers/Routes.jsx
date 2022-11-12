@@ -10,6 +10,7 @@ import { LoginAdm } from '../pages/LoginAdm';
 import { Usuario } from "../pages/Usuario/Usuario";
 import Adm from "../pages/Adm/Adm";
 import { Final } from "../components/Quiz/Todas/final";
+import QuestaoComentada from "../components/Quiz/QuestãoComentada/QuestaoComentada";
 
 export default props => (
     <BrowserRouter>

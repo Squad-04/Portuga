@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { LoginUIX } from './styled';
 import { useState } from 'react';
 //import UserContext from '../../context/userInfo';
-import axios from 'axios';
+import axios from 'redaxios';
 //import api from '../../service/user';
 
 

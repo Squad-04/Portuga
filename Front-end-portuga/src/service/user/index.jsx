@@ -1,5 +1,5 @@
 import { api } from "../api";
-import axios from "redaxios";
+import axios from 'redaxios';
 
 export const UserService = {
   loginUser: (email, senha) => api.post('/portuga/usuario', { email, senha }),

@@ -1,6 +1,6 @@
 import './CadastrosAdm.css'
 import { useEffect, useState } from "react";
-import axios from "redaxios";
+import axios from 'redaxios';
 import { useParams } from "react-router-dom";
 import CriarAdm from "./CriarAdm"
 import AtualizarAdm from "./AtualizarAdm";

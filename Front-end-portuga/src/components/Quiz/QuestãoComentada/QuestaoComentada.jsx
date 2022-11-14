@@ -1,13 +1,13 @@
 import React from "react";
-import "./QuestaoComentada.css";
+import "./QuestaoComentada.css"
 import imagem from "../../../assets/imagem.png";
-import axios from "axios";
+import axios from "redaxios";
 import { useState } from "react";
 
 export default function QuestaoComentada({ }) {
 
 
-    const [visible, setVisible] = useState(false)
+    const [visible] = useState(false)
     const [nome, setNome] = useState('');
     const [pergunta, setPergunta] = useState('');
 

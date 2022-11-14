@@ -54,4 +54,9 @@ export const QuizUIX = styled.div`
     .wrong-answer{
         color: red;
     }
+
+    .botao1{
+      justify-content: center;
+      align-content: center;
+    }
 `;

@@ -21,7 +21,6 @@ export function Quiz({ title, subtitle, photo }) {
     const [questions, setQuestions] = useState(getQuestions);
     const [answer, setAnswer] = useState("");
     const [correctAnswer, setCorrectAnswer] = useState("");
-    const [state, setState] = useState(true)
     const [visible, setVisible] = useState(false);
 
 
@@ -46,7 +45,6 @@ export function Quiz({ title, subtitle, photo }) {
             setTimeout(() => {
                 const newQuestions = questions.filter((item) => item.number !== questions[0].number)
                 setQuestions(newQuestions);
-                state = (false);
                 setCorrectAnswer('');
                 const inputs = document.querySelectorAll('input[type=radio]');
                 inputs.forEach(element => element.checked = false);
@@ -86,8 +84,8 @@ export function Quiz({ title, subtitle, photo }) {
                     }
                     <div className="btn-group">
                         <button className="btn btn-success btn" onClick={() => handleAnswer()}>Responder</button>
-                        <button className="btn btn-success btn" onClick={() => setShowModal(true)}>comentarios</button>
-                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#comentario" aria-expanded="false" onClick={() => setVisible(!visible)} disabled={state}>
+                        <button className="btn btn-success btn" onClick={() => setShowModal(true)}>Comentarios</button>
+                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#comentario" aria-expanded="false" onClick={() => setVisible(!visible)} >
                             Explicação
                         </button>
 

@@ -1,7 +1,9 @@
-.container{
+#comentario{
     background-color: whitesmoke;
-    margin-top: 7%;
-} 
+    margin-top: 1%;
+   border: 2px solid red;
+
+}
 
 .subtitulo{
    align-content: left;

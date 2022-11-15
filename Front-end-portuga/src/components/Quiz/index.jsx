@@ -2,6 +2,8 @@ import { QuizUIX } from './styled';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import ComentariosQuiz from '../Quiz/QuizComentarios/comentarios'
+import lupa from '../../imagens/lupa-icon.png';
+import icone from '../../imagens/livro_icone.png';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -57,7 +59,7 @@ export function Quiz({ title, subtitle, photo }) {
     }
     return (
         <QuizUIX>
-            <Navbar />
+            <Navbar photo={lupa} img={icone}/>
             <main>
                 <div className="container">
                     <div className="btn-group">
@@ -85,7 +87,7 @@ export function Quiz({ title, subtitle, photo }) {
                     <div className="btn-group">
                         <button className="btn btn-success btn" onClick={() => handleAnswer()}>Responder</button>
                         <button className="btn btn-success btn" onClick={() => setShowModal(true)}>Comentarios</button>
-                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#comentario" aria-expanded="false" onClick={() => setVisible(!visible)} >
+                        <button className="btn btn-success" type="button" data-toggle="collapse" data-target="#comentario" aria-expanded="false" onClick={() => setVisible(!visible)} >
                             Explicação
                         </button>
 

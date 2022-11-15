@@ -1,26 +1,29 @@
-#comentario{
+#comentario {
     background-color: whitesmoke;
     margin-top: 1%;
-   border: 2px solid red;
-
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
 }
 
-.subtitulo{
-   align-content: left;
-   margin-top: 50px;
+.boxFormulario {
+    margin-top: none;
+    width: 550px;
+    padding: 25px;
 }
 
-.form-monitoria{
+.form-monitoria {
     display: flex;
-    margin-left: 25px;
+    margin-bottom: 10px;
 }
 
-.foto{
+.foto {
     width: 350px;
     margin-left: 20%;
     border-radius: 10px;
 }
 
-#btn-enviar{
+#btn-enviar {
     float: left;
 }

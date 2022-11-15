@@ -1,6 +1,6 @@
 import { QuizUIX } from './styled';
 import Footer from '../../components/Footer';
-import Navbar from '../../components/Navbar';
+import Navbar from '../../components/navbar';
 import ComentariosQuiz from '../Quiz/QuizComentarios/comentarios'
 import lupa from '../../imagens/lupa-icon.png';
 import icone from '../../imagens/livro_icone.png';

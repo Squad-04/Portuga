@@ -5,7 +5,7 @@ function NavMenu({ photo, img }) {
   return (
     <NavBackground>
       <nav className="navbar navbar-dark navbar-expand-lg ">
-        <a className="navbar-brand" href="./index.html">
+        <a className="navbar-brand" href="./">
           <img src={img} width="30px" />
           Portuga
         </a>
@@ -16,7 +16,7 @@ function NavMenu({ photo, img }) {
 
         <div className="collapse navbar-collapse" id="menu">
           <ul className="navbar-nav">
-            <li className="nav-item"><Link className="nav-link" to='/'>Home teste</Link></li>
+            <li className="nav-item"><Link className="nav-link" to='/'>Home</Link></li>
             <li className="nav-item"><Link to='/desafio' className="nav-link">
               <img src={photo} width="20px" />
               Desafios Portuga

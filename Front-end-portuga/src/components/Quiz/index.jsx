@@ -4,9 +4,7 @@ import Navbar from '../../components/navbar';
 import ComentariosQuiz from '../Quiz/QuizComentarios/comentarios'
 import lupa from '../../imagens/lupa-icon.png';
 import icone from '../../imagens/livro_icone.png';
-
 import { useNavigate } from 'react-router-dom';
-
 import getQuestions from './Quiz.json'
 import { useState } from 'react';
 import { Final } from './Todas/final';

@@ -1,8 +1,9 @@
 import React from "react";
 import "./QuestaoComentada.css"
 import imagem from "../../../assets/imagem.png";
-import axios from "redaxios";
 import { useState } from "react";
+import axios from "redaxios";
+
 
 export default function QuestaoComentada({ }) {
 

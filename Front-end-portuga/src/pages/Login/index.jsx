@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { LoginUIX } from './styled';
 import { useState } from 'react';
 //import UserContext from '../../context/userInfo';
-import axios from "redaxios";
+import axios from 'redaxios';
 //import api from '../../service/user';
 
 
@@ -45,16 +45,14 @@ export function Login() {
             email: email,
             senha: senha
         }).then(() =>{
-            if(email === email && senha === senha){
-                navigate("/usuario");
-            } else{
-                alert("Hove algum erro, tente novamente!")
-            }
+          navigate("/usuario")
             }
         ).catch((erro) => {
             console.log(erro)
+            alert("Senha ou Email incorretos.")
         })
     }
+
 
     function navegar(){
         navigate("/loginAdm");
@@ -110,7 +108,8 @@ export function Login() {
                                             data-toggle="modal" data-target=".bd-example-modal-lg"   >clicando
                                             aqui</a></p>
                                         <Link to="/" className='link'>Página Inicial</Link>
-                                        <p className="help"><a href="ajuda.html">Precisa de ajuda?</a></p>
+                                    
+                                
                                     </div>
                                 </div>
                             </form>

@@ -1,13 +1,12 @@
 import { QuizUIX } from './styled';
-import Footer from '../../components/Footer';
-import Navbar from '../../components/navbar';
+import Navbar from '../../components/Navbar';
 import ComentariosQuiz from '../Quiz/QuizComentarios/comentarios'
-import lupa from '../../imagens/lupa-icon.png';
 import icone from '../../imagens/livro_icone.png';
+import lupa from '../../imagens/lupa-icon.png';
 import { useNavigate } from 'react-router-dom';
+
 import getQuestions from './Quiz.json'
 import { useState } from 'react';
-import { Final } from './Todas/final';
 import QuestaoComentada from './QuestãoComentada/QuestaoComentada';
 import Explicações from './QuestãoComentada/QuestaoComentada';
 
@@ -16,12 +15,15 @@ export function Quiz({ title, subtitle, photo }) {
 
     const navigate = useNavigate('');
     const [showModal, setShowModal] = useState(false);
+    const [comentario, setComentario] = useState();
     const [correctScore, setCorrectScore] = useState(0);
     const [wrongScore, setWrongScore] = useState(0);
     const [questions, setQuestions] = useState(getQuestions);
     const [answer, setAnswer] = useState("");
     const [correctAnswer, setCorrectAnswer] = useState("");
+    const [state, setState] = useState(true)
     const [visible, setVisible] = useState(false);
+
 
 
     const handleAnswer = () => {
@@ -32,8 +34,6 @@ export function Quiz({ title, subtitle, photo }) {
                 setCorrectScore(correctScore + 1)
                 setCorrectAnswer(questions[0].correct_answer);
 
-
-
             } else {
                 setWrongScore(wrongScore + 1)
                 setCorrectAnswer(questions[0].correct_answer);
@@ -41,6 +41,8 @@ export function Quiz({ title, subtitle, photo }) {
 
             const inputs = document.querySelectorAll('input[type=radio]');
             inputs.forEach(element => element.disabled = true);
+            confirm("Em 5 minutos iremos para proxima pergunta!" +
+                " caso não entenda a pergunta aperte em Explicaçães!");
 
             setTimeout(() => {
                 const newQuestions = questions.filter((item) => item.number !== questions[0].number)
@@ -52,7 +54,7 @@ export function Quiz({ title, subtitle, photo }) {
             }, 5000)
         }
         else {
-            navigate('/final')
+            navigate("/final")
         }
     }
     return (
@@ -64,7 +66,6 @@ export function Quiz({ title, subtitle, photo }) {
                         <a className="btn btn-success disabled">DESAFIOS:</a>
                         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(item => (<button type="button" className={`btn ${questions[0].number === item ? 'btn-success' : 'btn-warning'}`}>{item}</button>))}
                     </div>
-                    {/* <h3>{title}</h3> */}
                     <img src={questions[0].image} />
 
                     <span className='questions'>{questions[0].question}</span>
@@ -84,8 +85,8 @@ export function Quiz({ title, subtitle, photo }) {
                     }
                     <div className="btn-group">
                         <button className="btn btn-success btn" onClick={() => handleAnswer()}>Responder</button>
-                        <button className="btn btn-success btn" onClick={() => setShowModal(true)}>Comentarios</button>
-                        <button className="btn btn-success" type="button" data-toggle="collapse" data-target="#comentario" aria-expanded="false" onClick={() => setVisible(!visible)} >
+                        <button className="btn btn-success btn" onClick={() => setShowModal(true)}>comentarios</button>
+                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#comentario" aria-expanded="false" onClick={() => setVisible(!visible)}>
                             Explicação
                         </button>
 
@@ -93,10 +94,12 @@ export function Quiz({ title, subtitle, photo }) {
                 </div>
             </main>
             {visible === true &&
-                <Explicações visible={visible} />
+                <Explicações visible={visible} correctResponse={questions[0].comentario
+                } />
             }
             <ComentariosQuiz isOpen={showModal} onClickClose={() => setShowModal(false)} />
-            <Footer />
+
+
         </QuizUIX>
 
     )

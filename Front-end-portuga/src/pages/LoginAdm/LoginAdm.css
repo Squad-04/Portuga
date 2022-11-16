@@ -1,11 +1,13 @@
 #aviso{
     background-color: rgb(43, 143, 69);
     position:fixed;
-    top:0px;
+    bottom:0px;
     left: 370px;
     display: flex;
 }
 
 #texto{
     font-size: medium;
+    text-align: center;
+    color: whitesmoke;
 }

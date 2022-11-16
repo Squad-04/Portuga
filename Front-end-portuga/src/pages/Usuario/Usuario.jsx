@@ -1,18 +1,18 @@
 import NavMenu from "../../components/navbar";
-import Pontuacao from "../../components/Pontuacao/Pontuacao";
 import UsuarioNav from "../../components/UsuarioNav/UsuarioNav";
-import logo from "../../imagens/livro_icone.png"
+import logo from "../../imagens/livro_icone.png";
 import lupa from "../../imagens/lupa-icon.png";
-
-
+import './styled.css'
 export function Usuario() {
 
     return (
-        <main>
-            <NavMenu img={logo} photo={lupa} />
-            <Pontuacao nome="Estudante" pontos="0" nivel="Iniciante"/>
+        <>          
+           <NavMenu img={logo} photo={lupa} />
+            <div className="teste">
+            <h2>Página do Usuário</h2>
             <UsuarioNav />
-            
-        </main>
+        </div>
+        </>
+ 
     );
 }

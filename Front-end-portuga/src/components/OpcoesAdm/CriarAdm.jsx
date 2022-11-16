@@ -5,25 +5,27 @@ import { useNavigate } from "react-router-dom";
 function CriarAdm() {
 
     const navigate = useNavigate();
-    const[nome, setNome] = useState("");
-    const[acesso, setAcesso] = useState("");
-    const[senha, setSenha] = useState("");
-    const[nivel_acesso, setNivel_Acesso] = useState("");
+    const [nome, setNome] = useState("");
+    const [acesso, setAcesso] = useState("");
+    const [cargo, setCargo] = useState("");
+    const [senha, setSenha] = useState("");
+    const [nivel_acesso, setNivel_Acesso] = useState("");
 
     const cadastrar = async (e) => {
         e.preventDefault();
         await axios
-        .post("http://localhost:8080/portuga/administrador", {
-            nome: nome,
-            acesso: acesso,
-            senha: senha,
-            nivel_acesso: nivel_acesso,
-        }).then((result) => {
-            alert("Administrador Criado com Sucesso");
-            navigate("/admpage");
-        }).catch((erro) => {
-            console.log(erro);
-        })
+            .post("http://localhost:8080/portuga/administrador", {
+                nome: nome,
+                acesso: acesso,
+                cargo: cargo,
+                senha: senha,
+                nivel_acesso: nivel_acesso,
+            }).then((result) => {
+                alert("Administrador Criado com Sucesso");
+                navigate("/adm");
+            }).catch((erro) => {
+                console.log(erro);
+            })
     };
 
     return (
@@ -47,7 +49,7 @@ function CriarAdm() {
                             <div className="form-row">
                                 <div className="form-group col-md-6">
                                     <label >Acesso</label>
-                                    <input type="email" className="form-control" value={acesso} onChange={(e) => setAcesso(e.target.value)}/>
+                                    <input type="email" className="form-control" value={acesso} onChange={(e) => setAcesso(e.target.value)} />
                                 </div>
                                 <div className="form-group col-md-6">
                                     <label>Senha</label>
@@ -56,7 +58,20 @@ function CriarAdm() {
                             </div>
                             <div className="form-row">
                                 <div className="form-group col-md-6">
-                                    <label htmlFor="inputAddress">Nivel de Acesso</label>
+                                    <label>Cargo</label>
+                                    <select className="form-control" value={cargo} onChange={(e) => setCargo(e.target.value)}>
+                                        <option value="selected">Selecione...</option>
+                                        <option>Monitor</option>
+                                        <option>Professor</option>
+                                        <option>Desenvolvedor Júnior</option>
+                                        <option>Desenvolvedor Pleno</option>
+                                        <option>Desenvolvedor Sênior</option>
+                                        <option>Admininistrador Geral</option>
+                                    </select>
+                                </div>
+                                
+                                <div className="form-group col-md-6">
+                                    <label>Nivel de Acesso</label>
                                     <select className="form-control" value={nivel_acesso} onChange={(e) => setNivel_Acesso(e.target.value)}>
                                         <option value="selected">Selecione...</option>
                                         <option>Alto</option>
@@ -69,7 +84,7 @@ function CriarAdm() {
                         </form>
                     </div>
                     <div className="modal-footer">
-                    <button type="button" className="btn btn-success" data-dismiss="modal" data-target="#criarAdm" onClick={cadastrar}>Criar</button>
+                        <button type="button" className="btn btn-success" data-dismiss="modal" data-target="#criarAdm" onClick={cadastrar}>Criar</button>
                     </div>
                 </div>
             </div>

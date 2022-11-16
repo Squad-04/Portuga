@@ -8,4 +8,6 @@ export const ModelUi = styled.div`
         width: 7rem;
         height: 50px;
     }
+
+
 `;

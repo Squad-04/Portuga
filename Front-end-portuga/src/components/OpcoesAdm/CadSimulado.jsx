@@ -3,7 +3,7 @@ import "./CadSimulado.css";
 function CadSimulado() {
     return (
         <div id="cadSimulado">
-            <form>
+            <form id="container">
                 <h3>Cadastro de Simulado</h3>
                 <div className="form-row">
                     <div className="form-group col-5">
@@ -17,51 +17,56 @@ function CadSimulado() {
                         </select>
                     </div>
                 </div>
+
                 <div className="form-row">
                     <div className="form-group col-5">
-                        <label>Questão</label>
-                        <input type="text" className="form-control" />
+                        <label>Questão:</label>
+                       <textarea className="form-control"></textarea>
                     </div>
                 </div>
+
                 <label>Opções:</label>
                 <div className="form-row">
-                    <div className="form-group col-5 formulario">
+                    <div className="form-group col-4 formulario">
                         <label>a&#41;</label>
                         <input type="text" className="form-control" />
+                    </div>
+                    <div>
                         <input type="radio" name="resposta"/>
-                        <label>Resposta Correta</label>
+                        <label className="ml-2">Resposta Correta</label>
                     </div>
                 </div>
+
                 <div className="form-row">
-                    <div className="form-group col-5 formulario">
+                    <div className="form-group col-4 formulario">
                         <label>b&#41;</label>
                         <input type="text" className="form-control" />
+                    </div>
+                    <div>
                         <input type="radio" name="resposta"/>
-                        <label>Resposta Correta</label>
+                        <label className="ml-2">Resposta Correta</label>
                     </div>
                 </div>
+
                 <div className="form-row">
-                    <div className="form-group col-5 formulario">
+                    <div className="form-group col-4 formulario">
                         <label>c&#41;</label>
                         <input type="text" className="form-control" />
+                    </div>
+                    <div>
                         <input type="radio" name="resposta"/>
-                        <label>Resposta Correta</label>
+                        <label className="ml-2">Resposta Correta</label>
                     </div>
                 </div>
+
                 <div className="form-row">
-                    <div className="form-group col-5 formulario">
+                    <div className="form-group col-4 formulario">
                         <label>d&#41;</label>
                         <input type="text" className="form-control" />
-                        <input type="radio" name="resposta"/>
-                        <label>Resposta Correta</label>
                     </div>
-                </div>
-                <div className="form-row">
-                    <div className="form-group col-5 formulario">
-                        <label>e&#41;</label>
-                        <input type="text" className="form-control" />
+                    <div>
                         <input type="radio" name="resposta"/>
-                        <label>Resposta Correta</label>
+                        <label className="ml-2">Resposta Correta</label>
                     </div>
                 </div>
 
@@ -69,18 +74,18 @@ function CadSimulado() {
                     <div className="form-group col-5">
                         <label>Comentário da Questão:</label>
                         <textarea className="form-control"
-                        placeholder="Escreva aqui comentários para ajudar os alunos no entendimento das questões.."
+                            placeholder="Escreva aqui comentários para ajudar os alunos no entendimento das questões.."
                         ></textarea>
                     </div>
                 </div>
 
                 <div className="form-row">
                     <div className="form-group col-5">
-                        <label>URL de Vídeo sobre o Tema:</label>
+                        <label>Link de Vídeo ou Artigo sobre o Tema:</label>
                         <input type="text" className="form-control" />
                     </div>
                 </div>
-                
+
                 <div className="form-row">
                     <div className="form-group col-5">
                         <button className="btn btn-success">Enviar</button>

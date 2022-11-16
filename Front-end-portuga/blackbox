@@ -1,0 +1,26 @@
+// how to aling a text ?    
+.desc {
+  text-align: center;
+  font-weight: normal;
+  margin: 2px;
+}
+
+
+
+.horizontal div {
+  display: inline-block;
+}
+
+<div class="horizontal">
+<div>Test 1</div>
+<div>Test 2</div>
+<div>Test 3</div>
+<div>Test 4</div>
+</div>
+
+
+
+
+
+
+

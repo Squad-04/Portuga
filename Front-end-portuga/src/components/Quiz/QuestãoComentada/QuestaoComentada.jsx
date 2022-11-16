@@ -1,14 +1,12 @@
 import React from "react";
-import "./QuestaoComentada.css"
-import imagem from "../../../assets/imagem.png";
-import { useState } from "react";
+import "./QuestaoComentada.css";
+import imagem from "../../../imagens/estudo.jpg";
 import axios from "redaxios";
+import { useState } from "react";
 
+export default function QuestaoComentada({ correctResponse }) {
 
-export default function QuestaoComentada({ }) {
-
-
-    const [visible] = useState(false)
+    const [visible, setVisible] = useState(false)
     const [nome, setNome] = useState('');
     const [pergunta, setPergunta] = useState('');
 
@@ -31,17 +29,18 @@ export default function QuestaoComentada({ }) {
 
             <div className="container collapse" id="comentario" visible={visible}>
                 <h2>Entenda a Questão:</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed, quibusdam provident rem necessitatibus eum reiciendis labore ex earum quod ipsum quasi, debitis, quia distinctio deleniti neque? Optio, odio quam?</p>
-                <h3>Ainda não entendeu? Pergunte a um Monitor:</h3>
+                <p>{correctResponse}</p>
+
+                <h3 className="subtitulo">Ainda não entendeu? Pergunte a um Monitor:</h3>
                 <form className="form-monitoria">
-                    <div className="form-goup boxFormulario">
-                        <div className="form-row my-4">
+                    <div>
+                        <div className="form-row my-3">
                             <labe>Nome:</labe>
                             <input type="text" className="form-control" value={nome} onChange={(e) => setNome(e.target.value)}></input>
                         </div>
-                        <div className="form-row my-4">
+                        <div className="form-row my-3">
                             <label >Digite aqui sua dúvida:</label>
-                            <textarea className="form-control col-md-12" value={pergunta} onChange={(e) => setPergunta(e.target.value)}
+                            <textarea className="form-control" value={pergunta} onChange={(e) => setPergunta(e.target.value)}
                                 placeholder="Explique aqui para que o Monitor possa te ajudar..."></textarea>
                         </div>
                         <div>

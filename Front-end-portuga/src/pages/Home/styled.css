@@ -1,23 +1,26 @@
 main{
     background-color: #fff;
+    
 }
 
 .containerCards {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
+    
 }
 
 .container-fluid{
     display: flex;
     
-
 }
 
 
 
 section{
     padding: 6rem;
+    
 }
 
 h2 {
@@ -27,13 +30,18 @@ h2 {
 }
 
 hr{
-    border: 1rem solid;
-    color:rgb(236, 236, 236);
+    border: 1px solid;
+    color:rgba(27, 221, 43, 0.733);
+    
 }
 
 .cardMenu{
     display: flex;
     margin: 8rem;
     margin-left: -3px;
-    
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
 }

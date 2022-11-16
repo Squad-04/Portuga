@@ -16,6 +16,7 @@ export const CardStyled = styled.div`
         background-color: rgb(178, 238, 153);
         margin: 30px;
         margin-left: 10rem;
+        text-align: center;
         
         h4{
             margin-top: 4rem;

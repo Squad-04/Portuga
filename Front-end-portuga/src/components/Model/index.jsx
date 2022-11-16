@@ -20,23 +20,30 @@ function Model() {
             avaliacaoSimulado: avaliacaoSimulado,
             indicaria: indicaria,
             mensagem: mensagem,
-        
+
         }).then((result) => {
             alert("Formulário enviado!");
         }).catch((erro) => {
             console.log(erro);
         })
-    }    
+    }
 
     return (
         <main>
-            <div className="container container-fluid border border-success mt-5" id="box_form">
+            <div className="container border border-success mt-5" id="box_form">
 
-                <h2>Está Gostando? Nos dê sua opinião!</h2>
+                <div className="d-flex flex-column">
+                    <div>
+                        <h2>Está Gostando? Nos dê sua opinião!</h2>
+                    </div>
 
-                <p>Sua opinião é muito importante para melhorar o conteúdo da nossa Plataforma!
-                    Responda um questionário rápido nos contando sua experiência. Não é necessário cadastro.
-                </p>
+                    <div>
+                        <p>Sua opinião é muito importante para melhorar o conteúdo da nossa Plataforma!
+                            Responda um questionário rápido nos contando sua experiência. Não é necessário cadastro.
+                        </p>
+                    </div>
+
+                </div>
 
                 <button type="button" className="btn btn-success" data-toggle="modal" data-target="#formulario">Responder</button>
             </div>
@@ -53,12 +60,12 @@ function Model() {
                                 <div className="form-row">
                                     <div className="form-group col-md-6">
                                         <label>Nome</label>
-                                        <input type="text" className="form-control" value={nome} onChange={(e) => setNome(e.target.value)}/>
+                                        <input type="text" className="form-control" value={nome} onChange={(e) => setNome(e.target.value)} />
                                     </div>
 
                                     <div className="form-group col-md-3">
                                         <label>Idade</label>
-                                        <input type="number" className="form-control" value={idade} onChange={(e) => setIdade(e.target.value)}/>
+                                        <input type="number" className="form-control" value={idade} onChange={(e) => setIdade(e.target.value)} />
                                     </div>
                                 </div>
 
@@ -85,9 +92,9 @@ function Model() {
                                 </div>
 
                                 <label className="mr-2">Indicaria a Plataforma para outras pessoas?</label>
-                                <input type="radio" name="indicação" value="Sim" onChange={(e) => setIndicaria(e.target.value)}/>
+                                <input type="radio" name="indicação" value="Sim" onChange={(e) => setIndicaria(e.target.value)} />
                                 <label className="mr-2">Sim</label>
-                                <input type="radio" name="indicação" value="Não" onChange={(e) => setIndicaria(e.target.value)}/>
+                                <input type="radio" name="indicação" value="Não" onChange={(e) => setIndicaria(e.target.value)} />
                                 <label className="mr-2">Não</label>
 
                                 <label>Nos conte abaixo mais sobre a sua experiência e

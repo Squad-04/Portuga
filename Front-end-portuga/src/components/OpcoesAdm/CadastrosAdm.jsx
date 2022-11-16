@@ -53,9 +53,9 @@ function CadastrosAdm() {
                         <tr>
                             <th scope="col">ID</th>
                             <th scope="col">Nome</th>
+                            <th scope="col">Cargo</th>
                             <th scope="col">Acesso</th>
                             <th scope="col">Nível de Acesso</th>
-                            <th scope="col">-</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -63,6 +63,7 @@ function CadastrosAdm() {
                             <tr>
                                 <th>{administrador.id}</th>
                                 <td> {administrador.nome} </td>
+                                <td> {administrador.cargo} </td>
                                 <td> {administrador.acesso} </td>
                                 <td> {administrador.nivel_acesso} </td>
                                 <td><button type="submit" className="btn btn-danger" data-toggle="modal" 

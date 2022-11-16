@@ -5,6 +5,7 @@ function AtualizarAdm() {
 
     const [id, setId] = useState("");
     const [nome, setNome] = useState("");
+    const [cargo, setCargo] = useState("");
     const [acesso, setAcesso] = useState("");
     const [senha, setSenha] = useState("");
     const [nivel_acesso, setNivel_Acesso] = useState("");
@@ -14,6 +15,7 @@ function AtualizarAdm() {
         axios.put(`http://localhost:8080/portuga/administrador/${id}`, {
             nome: nome,
             acesso: acesso,
+            cargo: cargo,
             senha: senha,
             nivel_acesso: nivel_acesso
         }).then((result) => {
@@ -43,11 +45,11 @@ function AtualizarAdm() {
                                 </div>
 
                                 <div className="col-md-6">
-                                        <div className="form-group">
-                                            <label>Nome Completo:</label>
-                                            <input type="text" className="form-control" placeholder="....." value={nome} onChange={(e) => setNome(e.target.value)} />
-                                        </div>
+                                    <div className="form-group">
+                                        <label>Nome Completo:</label>
+                                        <input type="text" className="form-control" placeholder="....." value={nome} onChange={(e) => setNome(e.target.value)} />
                                     </div>
+                                </div>
                             </div>
                             <div className="form-row">
                                 <div className="form-group col-md-6">
@@ -60,6 +62,19 @@ function AtualizarAdm() {
                                 </div>
                             </div>
                             <div className="form-row">
+                                <div className="form-group col-md-6">
+                                    <label>Cargo</label>
+                                    <select className="form-control" value={cargo} onChange={(e) => setCargo(e.target.value)}>
+                                        <option value="selected">Selecione...</option>
+                                        <option>Monitor</option>
+                                        <option>Professor</option>
+                                        <option>Desenvolvedor Júnior</option>
+                                        <option>Desenvolvedor Pleno</option>
+                                        <option>Desenvolvedor Sênior</option>
+                                        <option>Admininistrador Geral</option>
+                                    </select>
+                                </div>
+
                                 <div className="form-group col-md-6">
                                     <label htmlFor="inputAddress">Nivel de Acesso</label>
                                     <select className="form-control" value={nivel_acesso} onChange={(e) => setNivel_Acesso(e.target.value)}>

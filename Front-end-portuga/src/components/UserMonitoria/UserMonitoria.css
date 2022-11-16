@@ -1,0 +1,12 @@
+.card{
+    border: 1px solid green;
+    width: 300px;
+}
+
+#userMonitoria{
+    justify-content: center;
+    margin-top: -15em;
+    position: absolute;
+    width: 40%;
+    height: 25em;
+}

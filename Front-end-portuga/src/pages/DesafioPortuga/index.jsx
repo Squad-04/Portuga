@@ -1,8 +1,9 @@
- import NavMenu from '../../components/navbar';
+import NavMenu from '../../components/navbar';
 import Footer from '../../components/Footer';
 
 import icone from '../../imagens/livro_icone.png';
 import lupa from '../../imagens/lupa-icon.png'
+import esticar from '../../imagens/esticar.png'
 
 import './styled.css';
 import { Link } from 'react-router-dom';
@@ -15,6 +16,7 @@ import { Link } from 'react-router-dom';
             <br/>
             <div className="container">
                 <h1 className="titulo"> Desafios Portuga!</h1>
+                <img src={esticar} className="mx-auto d-block" width="30%"/>
                 <h5 className="titulo">Um jeito prático e interativo de estudar por meio de Simulados!</h5>
                 <img src={photo} className="mx-auto d-block" width="25%"/>
                 <div className="row">
@@ -42,4 +44,3 @@ import { Link } from 'react-router-dom';
         </main>
     )
  }
-

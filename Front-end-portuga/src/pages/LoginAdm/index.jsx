@@ -10,9 +10,6 @@ export function LoginAdm() {
     return (
         <div>
             <LoginUIX>
-            <div id="aviso">
-                <h3 id="texto">Quer ser um Portuga ADM e ajudar a nossa plataforma? Entre em contato com a nossa equipe!</h3>
-            </div>
                 <main>
                     <div className="container-fluid">
                         <section className="cadastro">
@@ -43,7 +40,7 @@ export function LoginAdm() {
                                         </div>
                                         <div className="primeiro" >
                                             <Link to="/" className='link'>Página Inicial</Link>
-                                            <p className="help"><a href="ajuda.html">Esqueceu a senha?</a></p>
+                
                                         </div>
                                     </div>
                                 </form>
@@ -106,6 +103,10 @@ export function LoginAdm() {
                     </span>
                 </main >
             </LoginUIX >
+            <div id="aviso">
+                    <h3 id="texto">Quer ser um Portuga ADM e ajudar a nossa plataforma? Entre em contato com a nossa equipe!<br />
+                        Mande a sua solicitação para o email: squad004@gmail.com.</h3>
+                </div>
         </div>
     );
 }

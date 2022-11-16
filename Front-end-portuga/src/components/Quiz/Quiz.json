@@ -1,6 +1,6 @@
 [
     {
-     "image": "../src/assets/quiz1.png",
+     "image": "../src/imagens/quiz1.png",
     "number": 1,
     "question": "Pela análise do conteúdo, constata-se que essa campanha publicitária tem como função social:",
     "answers": [
@@ -10,123 +10,134 @@
     "(d) divulgar políticas sociais que combatem a intolerância preconceito.",
     "(e) instruir as pessoas sobre a forma correta de expressão nas redes sociais"
 ],
-    "correct_answer": "(a) propagar a imagem positiva do Ministério Público."
+    "correct_answer": "(a) propagar a imagem positiva do Ministério Público.",
+    "comentario": "O candidato deve notar que a questão se refere à função apelativa ou conativa da linguagem, que consiste em “influenciar o comportamento do destinatário” (MARTELOTTA, 2011, p. 34). Algumas pistas podem ajudar o candidato a resolver a questão: o texto motivador é uma campanha de conscientização sobre liberdade de expressão e responsabilidade; no mesmo texto, aparecem dois verbos no infinitivo (“Colabore” e “denuncie”), uma característica gramatical típica da função conativa; além disso, o enunciado informa que texto tem uma “função social”."
     },
 
     {
-    "image": "../src/assets/lupa-icon.png",
+    "image": "../src/imagens/petdescartavel.png",
     "number": 2,
-    "question": "(ENEM 2021) Um dos exames clínicos mais tradicionais para medir a capacidade reflexa dos indivíduos é o exame do reflexo patelar. Esse exame consiste na estimulação da patela, um pequeno osso localizado na parte anterior da articulação do joelho, com um pequeno martelo. A resposta reflexa ao estímulo é caracterizada pelo levantamento da perna em que o estímulo foi aplicado. Qual região específica do sistema nervoso coordena essa resposta?",
+    "question": "A associação entre o texto verbal e as imagens da garrafa e do cão configura recurso expressivo que busca",
 
     "answers": [
-    "(a) Ponte.",
-    "(b) Medula",
-    "(c) Cerebelo",
-    "(d) Hipotálamo"
+    "(a) estimular denúncias de maus-tratos contra animais.",
+    "(b) sensibilizar o público em relação ao abandono de animais domésticos.",
+    "(c) desvincular o conceito de descarte da ideia de negligência.",
+    "(d) incentivar campanhas de adoção de animais em situação de rua."
     ],
-    "correct_answer": "(b) Medula"
+    "correct_answer": "(b) sensibilizar o público em relação ao abandono de animais domésticos.",
+    "comentario": "O candidato deve perceber que a questão refere-se à função apelativa ou conativa da linguagem, em que o objetivo da mensagem é influenciar o comportamento do receptor. É muito comum o estudante decorar que, nessa função, há uma predominância de verbos no imperativo, indicando uma ordem ao receptor. Na imagem usada na questão, apesar de isso não se confirmar, temos uma campanha de conscientização, feita a partir dos diversos significados da palavra “pet”: de um lado, uma garrafa plástica; do outro, um cachorrinho. A ideia da campanha é, ainda, destacada por meio da frase “Abandono de animais é crime”."
     },
 
     {
-    "image": "../src/assets/lupa-icon.png",
+    "image": "../src/imagens/devagardevagarinho.png",
     "number": 3,
-    "question": "Os búfalos são animais considerados rústicos pelos criadores e, por isso, são deixados no campo sem controle reprodutivo. Por causa desse tipo de criação, a consanguinidade é favorecida, proporcionando o aparecimento de enfermidades, como o albinismo, defeitos cardíacos, entre outros. Separar os animais de forma adequada minimizaria a ocorrência desses problemas. Qual procedimento biotecnológico prévio é recomendado nessa situação?",
+    "question": "Nesse artigo de opinião, a apresentação da letra da canção Sinal fechado é uma estratégia argumentativa que visa sensibilizar o leitor porque",
     
     "answers": [
-    "(a) Transgenia",
-    "(b) Terapia gênica",
-    "(c) acina de DNA",
-    "(d) Mapeamento genético"
+    "(a) adverte sobre os riscos que o ritmo acelerado da vida oferece.",
+    "(b) apresenta soluções para a cultura da correria que as pessoas vivenciam hoje.",
+    "(c) questiona o clichê sobre a rapidez e a aceleração da vida moderna.",
+    "(d) exemplifica o fato criticado no texto com uma situação concreta."
     ],
-    "correct_answer": "(d) Mapeamento genético"
+    "correct_answer": "(d) exemplifica o fato criticado no texto com uma situação concreta.",
+    "comentario": "Comentário: Nesta questão, o autor do texto utilizou uma citação direta, por meio da transcrição de um trecho de música, como exemplificação para a situação de “comunicação vazia e superficial” citada no texto. Note que os dois interlocutores estabelecem uma conversa em que nenhum assunto é, de fato, discutido."
     },
 
     {
-    "image": "../src/assets/lupa-icon.png",
+    "image": "../src/imagens/omeninoquefezummuseu.png",
     "number": 4,
-    "question": "(ENEM 2021) A simples atitude de não jogar direto no lixo ou no ralo da pia o óleo de cozinha usado pode contribuir para a redução da poluição ambiental. Mas o que fazer com o óleo vegetal que não será mais usado? Não existe um modelo ideal de descarte, mas uma alternativa simples tem sido reaproveitá-lo para fazer sabão. Para isso, são necessários, além do próprio óleo, água e soda cáustica. Com base no texto, a reação química que permite o reaproveitamento do óleo vegetal é denominada",
+    "question": "No segundo parágrafo, uma citação afirma que o documentário “foi o único trabalho produzido por equipes fora do eixo Estados Unidos-Europa entre os finalistas”. No texto, esse recurso expressa uma estratégia argumentativa que reforça a",
     "answers": [
-    "(a) Redução",
-    "(b) saponificação",
-    "(c) esterificação",
-    "(d) substituição"
+    "(a) originalidade da iniciativa de homenagem à vida e à obra de Luiz Gonzaga.",
+    "(b) proeza da premiação de uma história ambientada no interior do Nordeste brasileiro.",
+    "(c) falta de concorrentes ao prêmio de uma das associações mais antigas do mundo.",
+    "(d) importância da parceria entre brasileiros e britânicos para a realização das filmagens."
     ],
-    "correct_answer": "(b) saponificação"
+    "correct_answer": "(b) proeza da premiação de uma história ambientada no interior do Nordeste brasileiro.",
+    "comentario": "Espera-se que o candidato identifique o segundo parágrafo como uma citação indireta, aquela que não se constitui como uma transcrição literal do que o enunciador disse ou escreveu. No texto, cita-se indiretamente o que foi dito pelo diretor do documentário, acerca da importância de se produzir um documentário ambientado no Nordeste brasileiro e a surpresa de a produção ter sido premiada."
     },
     {
-    "image": "../src/assets/lupa-icon.png",
+    "image": "../src/imagens/cenaantiga.png",
     "number": 5,
-    "question": " O rompimento da barragem de rejeitos de mineração no município mineiro de Mariana e o derramamento deprodutos tóxicos nas águas do Rio Doce, ocorridos em 2015, ainda têm consequências para os organismos que habitam o Parque Nacional Marinho de Abrolhos, localizado a mais de 1 000 quilômetros de distância. Esse desastre ambiental afetou o fitoplâncton, as esponjas, as algas macroscópicas, os peixes herbívoros e os golfinhos. Concentrações mais elevadas dos compostos citados são encontradas em",
+    "question": " No conto de Marina Colasanti, Bem e Mal são ideias personificadas. Essa personificação é identificada pela narração de:",
     "answers": [
-    "(a) golfinhos",
-    "(b) fitoplâncton",
-    "(c) peixes herbívoros",
-    "(d) algas macroscópicas"
+    "(a) ações",
+    "(b) crenças",
+    "(c) desejos",
+    "(d) sentimentos"
     ],
-    "correct_answer": "(a) golfinhos"
+    "correct_answer": "(a) ações",
+    "comentario": "A figura de linguagem personificação. Tal recurso de linguagem consiste na atribuição de características humanas àquilo que não é humano. Assim, no trecho transcrito do conto de Colassanti, tal figura aparece explicitamente por meio das ações atribuídas ao Bem e ao Mal: guardar, envolver, caminhar, discutir, trocar."
     },
     {
-    "image": "../src/assets/lupa-icon.png",
+    "image": "../src/imagens/aimagem.png",
     "number": 6,
-    "question": "Nas angiospermas, além da fertilização da oosfera, existe uma segunda fertilização que resulta num tecido triploide. Essa segunda fertilização foi importante evolutivamente, pois viabilizou a formação de um tecido de",
+    "question": "O cumprimento da função referencial da linguagem é uma marca característica do gênero resumo de artigo acadêmico. Na estrutura desse texto, essa função é estabelecida pela",
 
     "answers": [
-    "(a) nutrição para o fruto",
-    "(b) reserva para o embrião",
-    "(c) revestimento para a semente",
-    "(d) vascularização para a planta jovem"
+    "(a) seleção lexical, no  desenvolvimento sequencial do texto, como  em “imaginário racista” e “estética do  negro”.",
+    "(b) impessoalidade, na organização da objetividade das informações, como em “Este artigo tem por finalidade” e “Evidencia-se”.",
+    "(c) nominalização, produzida por  meio de  processos derivacionais na formação de palavras, como “inferiorização” e “desvalorização”.",
+    "(d) adjetivação, organizada para criar uma terminologia antirracista, como “ética da diversidade” e “descolonização estética”."
     ],
-    "correct_answer": "(b) reserva para o embrião"
+    "correct_answer": "(b) impessoalidade, na organização da objetividade das informações, como em “Este artigo tem por finalidade” e “Evidencia-se”.",
+    "comentario": "O candidato deve notar que a questão se refere à função referencial da linguagem, que  consiste  “na transmissão  de informações do remetente ao destinatário. […] Está centrada no  contexto já  que reflete uma preocupação em transmitir conhecimentos referentes a pessoas, objetos ou acontecimentos” (MARTELOTTA, 2011, p. 33). Além disso, o enunciado também informa em  que  gênero  textual é  possível observar  tal  função da  linguagem “é uma marca característica do gênero resumo de artigo acadêmico.”"
     },
     {
-    "image": "../src/assets/Evolucao.webp",
+    "image": "../src/imagens/lixo.png",
     "number": 7,
-    "question": "A palavra inglesa “involution” traduz-se como involução ou regressão. A construção da imagem com base na combinação do verbal com o não verbal revela a intenção de:",
+    "question": "Nessa campanha, a principal estratégia para convencer o  leitor a fazer reciclagem do  lixo  é a utilização da linguagem não verbal como argumento  para",
     "answers": [
-    "(a) Denunciar o retrocesso da humanidade",
-    "(b) Criticar o consumo de bebida alcoólica pelos humanos",
-    "(c) Elogiar a teoria da evolução humana pela seleção natural",
-    "(d) Fazer um trocadilho com as palavras inovações e involução"
+    "(a) facilidade na separação do lixo.",
+    "(b) reaproveitamento de material.",
+    "(c) melhoria da condição do catador.",
+    "(d) preservação dos recursos naturais."
     ],
-    "correct_answer": "(b) Criticar o consumo de bebida alcoólica pelos humanos"
+    "correct_answer": "(b) reaproveitamento de material.",
+    "comentario": "Nessa questão, a banca não apresentou o conteúdo programático  explicitamente como  na anterior, porém ele é  percebido  pelo  trecho  “a principal estratégia para convencer o  leitor a fazer reciclagem do  lixo”.  A função conativa ou  apelativa da linguagem  consiste em influenciar o comportamento do receptor da mensagem.  Podem ser seus objetivos persuadir o  público a comprar determinado  produto  ou  serviço,  a votar em  um determinado candidato, a  realizar qualquer tipo de ação. Gramaticalmente  é  caracterizada pela presença de verbos no modo imperativo, como  em “Mude de atitude” e “Separe o lixo e acerte na lata”."
     },
 
     {
-        "image": "../src/assets/1950.webp",
+        "image": "../src/imagens/acausasecreta.png",
     "number": 8,
-    "question": "Considerando o gênero propaganda institucional e o paralelo histórico traçado pela autora, é correto afirmar que o slogan do atual governo fracassou porque: ",
+    "question": "No fragmento,  o  narrador adota um ponto de vista que  acompanha a perspectiva de Fortunato. O  que singulariza esse procedimento  narrativo  é  o  registro do (a)",
     "answers": [
-    "(a) O uso da vírgula provocou uma leitura negativa do trecho que alude ao slogan da década de 1950",
-    "(b) A mensagem projeto pelo slogan anterior era mais clara, direta, e não exigia o uso da vírgula",
-    "(c) A alusão ao slogan anterior afasta o público jovem e provoca a perda de seu poder persuasivo",
-    "(d) O duplo sentido do verbo 'voltar' gerou uma mensagem que se afasta daquela projetada pelo slogan"    ],
-    "correct_answer":"(d) O duplo sentido do verbo 'voltar' gerou uma mensagem que se afasta daquela projetada pelo slogan"    
+    "(a) indignação face à suspeita do adultério da esposa.",
+    "(b) espanto diante da demonstração de afeto de Garcia.",
+    "(c) superação do ciúme pela comoção decorrente da morte.",
+    "(d) prazer da personagem em relação ao sofrimento alheio."   
+     ],
+    "correct_answer":"(d) prazer da personagem em relação ao sofrimento alheio." ,
+    "comentario": "O texto é  um trecho do conto Causa secreta, de Machado de Assis, em que um dos personagens sente satisfação ao observar cenas  mórbidas. É preciso  atenção  ao trecho selecionado e ao  conteúdo do  enunciado que diz ” o  narrador adota um ponto de vista que  acompanha a perspectiva de Fortunato”; ou seja, o  leitor  é  levado, por meio de estratégias narrativas, a  observar a cena junto com o personagem. Fortunato está de pé  na  porta e observa cuidadosamente os  gestos do amigo Garcia, do  momento  em  que  se aproxima do cadáver até a insinuação de  beijo."   
 
     },
     {
-        "image": "../src/assets/FranciscoAurélio.webp",
+        "image": "../src/imagens/niponica.png",
     "number": 9,
-    "question": "Segundo se infere do discurso de Francisco Aurélio Ribeiro, o capixaba em geral é acometido de:",
+    "question": "Referindo-se  a  práticas culturais de  origem  nipônica, o narrador registra as reações que elas  provocam na família e mostra um contexto  em que",
     "answers": [
-    "(a) Idiotismo latinoamericano, que se propõe e analtecer a produção local sem reservas, e ponto de deixar de aplicar juizos de valor em rel",
-    "(b) Complexo de vira-lata, que consiste em desmerecer a produção local, subestimando-a frente ás manifestações culturais de outros estados",
-    "(c) Filosofia de botequim, que consiste em lidar de modo superficial com as complexas abordagens da literatura local",
-    "(d) Visão local com consciência universal, na medida em que reconhece o alcance das produções literárias capixabas"
+    "(a) os conflitos de  gênero tendem  a ser  neutralizados.",
+    "(b) as  novas gerações abandonam seus  antigos  hábitos.",
+    "(c) as  novas gerações abandonam seus  antigos  hábitos.",
+    "(d) a  refeição  é  o  que  determina a  agregação familiar."
 ],
-    "correct_answer": "(b) Complexo de vira-lata, que consiste em desmerecer a produção local, subestimando-a frente ás manifestações culturais de outros estados"
+    "correct_answer": "(b) reforça comportamentos e padrões culturais.",
+    "comentario": "De acordo com  a  narrativa,  na sociedade  japonesa, mulheres  exercem   função social inferior  à dos  homens. Isso  é demonstrado por  meio da descrição  de uma cena   em  que  o  pai e os filhos  fazem  a  refeição  primeiro. A  metáfora é  uma  figura  de  linguagem descrita nas  gramáticas  como a “transferência de  um termo para uma esfera de significação  que  não  é  a sua, em  virtude de uma comparação implícita”.  O fragmento apresentado  na questão apresenta  metaforicamente, simbolicamente as relações de  poder entre homens e mulheres naquela  cultura"
 
     },
     {
-     "image": "../src/assets/elementosDeCoesão.webp",
+     "image": "../src/imagens/final.png",
     "number": 10,
     "question": "Sobre a presença de elementos de coesão no texto e sua contribuição para a percepção semântica, assinale a única consideração adequada:",
     "answers": [
-    "(a) Em 'Shirley Paes Leme tem no desenho a alma de sua obra', o referente de 'sua obra' é 'a peça em homenagem à companhia de dança goiana",
-    "(b) Em 'Os galhos retorcidos e enegrecidos...' (l. 2/4), o conector 'ora' indica que os traços a lápis não conseguem ser classificados idealmente",
-    "(c) Em 'Produz também delicados desenhos...'(l.4/5), a ausência de elemento de retomada antes do verbo dificulta a identificação do sujeito",
-    "(d) Em 'A obra de Shirley tem linhas-galhos que ...(i.12/14), a palavra 'que' é elemento de retomada, cujo referente está e, 'linhas-galhos'"
+    "(a) ampliação do sentido de  uma palavra.",
+    "(b) produção imprópria de poetas  portugueses.",
+    "(c) denominação científica com base em termos  gregos.",
+    "(d) restrição ao  uso de  um vocábulo pouco aceito socialmente."
 ],
-    "correct_answer": "(d) Em 'A obra de Shirley tem linhas-galhos que ...(i.12/14), a palavra 'que' é elemento de retomada, cujo referente está e, 'linhas-galhos'"
+    "correct_answer": "(d) restrição ao  uso de  um vocábulo pouco aceito socialmente.",
+    "comentario": "O candidato deve  observar que a  banca, ao  utilizar   a  expressão “tabu linguístico” no  enunciado e  “vocábulo  pouco aceito socialmente” em uma das alternativas, aborda  uma das figuras de linguagem: o  eufemismo. Esse recurso linguístico tem por  objetivo suavizar uma  mensagem  que  pode  ser  vista como desagradável.Um outro  ponto que aparece  na questão – ainda  que   muito  sutilmente  –   é a  variação histórica da  língua  portuguesa.   Toda  língua  natural  modifica-se com  o tempo:  mudam o   modo de  falar,  a  maneira de  estruturar  as frases, o  vocabulário e, muitas  vezes,  o  significado das palavras."
 
     }
     ]

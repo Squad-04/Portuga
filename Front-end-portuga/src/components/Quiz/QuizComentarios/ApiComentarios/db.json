@@ -7,75 +7,28 @@
       "userId": 1
     },
     {
-      "id": 2,
-      "comment": "Otimo questionario",
-      "comments": 2,
-      "userId": 2
+      "userId": 1,
+      "comment": "Estou com uma dúvida, alguém poderia me ajudar?",
+      "id": 2
     },
     {
       "userId": 1,
-      "comment": "Obrigado pelas explicações!",
+      "comment": "Sou professor e adminstrador do site, em que posso ajudar-lo ?",
+      "newComment": "",
+      "parentId": 2,
       "id": 3
-    },
-    {
-      "userId": 1,
-      "comment": "obrigado",
-      "newComment": "",
-      "parentId": 1,
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "comment": "Otimas perguntas! muito bem feita ",
-      "id": 6
-    },
-    {
-      "userId": 1,
-      "comment": "oi",
-      "id": 7
-    },
-    {
-      "userId": 1,
-      "comment": "Não entendi a B",
-      "id": 8
-    },
-    {
-      "userId": 1,
-      "comment": "E so selecionar",
-      "newComment": "",
-      "parentId": 8,
-      "id": 9
-    },
-    {
-      "userId": 1,
-      "comment": "Hello world",
-      "id": 10
-    },
-    {
-      "userId": 1,
-      "comment": "Olá",
-      "newComment": "",
-      "parentId": 10,
-      "id": 11
-    },
-    {
-      "userId": 1,
-      "comment": "oi\nougiugiugiugiugiugiugiugiugiugiugiu",
-      "newComment": "",
-      "parentId": 3,
-      "id": 12
     }
   ],
   "users": [
     {
       "id": 1,
       "name": "Phillip Jacobs",
-      "avatarUrl": "https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png"
+      "avatarUrl": "https://cdn-icons-png.flaticon.com/256/7167/7167883.png"
     },
     {
       "id": 2,
       "name": "Todd Mitchell",
-      "avatarUrl": "https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png"
+      "avatarUrl": "https://cdn-icons-png.flaticon.com/256/7167/7167883.png"
     }
   ]
 }

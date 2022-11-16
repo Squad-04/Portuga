@@ -89,7 +89,7 @@ export const LoginUIX = styled.div`
     bottom: 0;
     width: 20%;
     text-decoration: none;
-    color: green;
+    color: black;
 }
 
 `;

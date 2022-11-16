@@ -1,9 +1,16 @@
 #navbar{
     width: 200px;
+    margin-left: -15rem;
+}
+
+.lista{
+    text-decoration: none;
+    color: black;
 }
 
 .lista:hover{
     background-color: rgb(6, 150, 35);
     color: white;
 }
+
 

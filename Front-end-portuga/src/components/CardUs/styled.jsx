@@ -10,13 +10,16 @@ export const CardIUX = styled.div`
     margin-left: 0.7rem;
     background-color: white;
 
-    
 }
 .card{
     border: solid;
-    height: 40rem;
+    height: 54rem;
     background-color: #89df89;
 }
 
+.card-qr-social{
+    width: 90px;
+    height: 90px;
+}
 
 `;

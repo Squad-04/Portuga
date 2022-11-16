@@ -5,7 +5,7 @@ function NavMenu({ photo, img }) {
   return (
     <NavBackground>
       <nav className="navbar navbar-dark navbar-expand-lg ">
-        <a className="navbar-brand" href="./">
+        <a className="navbar-brand" href="./index.html">
           <img src={img} width="30px" />
           Portuga
         </a>
@@ -28,8 +28,9 @@ function NavMenu({ photo, img }) {
         </div>
 
         <form className="d-flex aling-content-rigth">
-          <input type="text" className="form-control" id="pesquisa" placeholder="Digite aqui..." />
-          <button className="btn btn-success ml-2" type="submit">Pesquisar</button>
+          <ul className="navbar-nav">
+            <li className="nav-item slogan">"Transformando através da Educação"</li>
+          </ul>
         </form>
       </nav>
     </NavBackground >

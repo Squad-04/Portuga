@@ -14,5 +14,5 @@ public interface UsuarioService {
 		void validarEmail(String Email);
 		Usuario validarUsuario(String email, String senha);
 		Usuario atualizarPorEmail(Usuario usuario, String email);
-
+		void deletarPorEmail(String email);
 }

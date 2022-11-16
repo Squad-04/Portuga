@@ -5,6 +5,7 @@ import java.util.Objects;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.portuga.exception.ErroMensagemException;
@@ -15,6 +16,16 @@ import com.portuga.service.UsuarioService;
 @Service
 public class UsuarioServiceImpl implements UsuarioService{
 	
+	private final PasswordEncoder encoder;
+	
+	
+	
+	public UsuarioServiceImpl(PasswordEncoder encoder, UsuarioRepository repositorio) {
+		super();
+		this.encoder = encoder;
+		this.repositorio = repositorio;
+	}
+
 	@Autowired
 	private UsuarioRepository repositorio;
 	
@@ -26,7 +37,6 @@ public class UsuarioServiceImpl implements UsuarioService{
 	
 	@Override
 	public Usuario selecionarPorId(Long id){
-		
 		return repositorio.findById(id).orElseThrow(() -> new ErroMensagemException("Usuario não encontrado."));
 	}
 	
@@ -62,7 +72,7 @@ public class UsuarioServiceImpl implements UsuarioService{
 			throw new ErroMensagemException("Usuáiro não encontrado");
 		}
 		
-		if(!usuario.get().getSenha().equals(senha)) {
+		if(!encoder.matches(senha, usuario.get().getSenha())) {
 			throw new ErroMensagemException("Senha Incorreta.");
 		}
 		
@@ -96,8 +106,14 @@ public class UsuarioServiceImpl implements UsuarioService{
 		usuarioAtual.setNumero(usuario.getNumero());
 		
 		repositorio.save(usuarioAtual);
-		return usuarioAtual;
-		
+		return usuarioAtual;	
+	}
+	
+	@Override
+	public void deletarPorEmail(String email) {
+		Usuario user = repositorio.findByEmail(email).orElseThrow(() -> 
+		new ErroMensagemException("Usuário não encontrado."));
+		repositorio.delete(user);
 	}
 	
 	

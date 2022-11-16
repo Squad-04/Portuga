@@ -28,6 +28,9 @@ public class Administrador {
 	private String nome;
 	
 	@Column
+	private String cargo;
+	
+	@Column
 	private String acesso;
 	
 	@Column

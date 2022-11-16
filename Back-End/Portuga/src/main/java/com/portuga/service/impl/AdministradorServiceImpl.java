@@ -29,6 +29,7 @@ public class AdministradorServiceImpl implements AdministradorService{
 		
 		admAtual.setNome(administrador.getNome());
 		admAtual.setAcesso(administrador.getAcesso());
+		admAtual.setCargo(administrador.getCargo());
 		admAtual.setSenha(administrador.getSenha());
 		admAtual.setNivel_acesso(administrador.getNivel_acesso());
 		

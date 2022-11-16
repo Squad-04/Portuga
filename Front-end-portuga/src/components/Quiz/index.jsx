@@ -1,5 +1,5 @@
 import { QuizUIX } from './styled';
-import Navbar from '../../components/Navbar';
+import Navbar from '../../components/navbar';
 import ComentariosQuiz from '../Quiz/QuizComentarios/comentarios'
 import icone from '../../imagens/livro_icone.png';
 import lupa from '../../imagens/lupa-icon.png';

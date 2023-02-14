@@ -1,20 +1,14 @@
-# Portuga
-Projeto de Curso do Squad 04 Recode Pro 2022
+# Projeto Portuga
 
-![Portuga](https://user-images.githubusercontent.com/108100442/193721242-4fd2569e-50ea-47b6-9ca0-2c6829310edb.png)
+Este projeto foi elaborado com o objetivo de entregar uma solução para o Projeto Final do Curso Recode Pro 2022. Com o tema educação nossa problemática é de encotrar uma alternativa para biaxa proficiência em leitura. 
 
+O Público Alvo deste projeto são alunos que concluíram ou estão concluindo o ensino médio e não tem a proficiênca necessária para realizar concursos, Enem, vestibulares e similares. 
+## Descrição
 
-Se trata de uma plataforma de incentivo a educação a com sua principal atividade o Simulado Portuga, voltado para a jovens que estão saindo do ensino médio e tem dificuldades em realizar concursos e enem por causa de baixa proficiência em leitura, onde o usuário responde perguntas comentadas para se preparar adequadamente para entender as questões e ao final verificar o seu desempenho.
+O Portuga é uma plataforma onde temos conteúdos para que o aluno possa trabalhar sua proficiência através de um questionário entre outros conteúdos voltados à leitura. 
 
-Inegrantes:
+A principal atividade da platforma é o Desafio portuga onde o usuário pode responder questões comentadas, solicitar monitorias e comentar com outros usuários. Ao final o aluno terá seu desempenho e pode responder outros questionários baseados em provas reais.
 
-- Jaqueline Lessa
-
-- Lucas Ribeiro
-
-- Sandro Souza
-
-- Wesley Berto
 
 Tecnologias e Linguagens usadas:
 

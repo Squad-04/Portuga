@@ -1,7 +1,7 @@
 
 # Projeto Portuga
 
-Este projeto foi elaborado com o objetivo de entregar uma solução para o Projeto Final do Curso Recode Pro 2022. Com o tema educação nossa problemática é de encotrar uma alternativa para biaxa proficiência em leitura. 
+Este projeto foi elaborado com o objetivo de entregar uma solução para o Projeto Final do Curso Recode Pro 2022. Com o tema educação nossa problemática é de encotrar uma alternativa para baixa proficiência em leitura. 
 
 O Público Alvo deste projeto são alunos que concluíram ou estão concluindo o ensino médio e não tem a proficiênca necessária para realizar concursos, Enem, vestibulares e similares. 
 

@@ -14,7 +14,7 @@ O Portuga é uma plataforma onde temos conteúdos para que o aluno possa trabalh
 
 A principal atividade da platforma é o Desafio portuga onde o usuário pode responder questões comentadas, solicitar monitorias e comentar com outros usuários. Ao final o aluno terá seu desempenho e pode responder outros questionários baseados em provas reais.
 
-O Portuga também tem o objetivo de ser uma ferramenta para outros projetos, por isso temos a área dos ADM's que podes criar simulados, responder monitorias entre outras atividades.
+O Portuga também tem o objetivo de ser uma ferramenta para outros projetos, por isso temos a área dos ADM's que podem criar simulados, responder monitorias entre outras atividades.
 ## Utilização
 
 Para utilizar o Desafio Portuga o usuário deve escolher um tema e começar o questionário. Durante a resolução das questões o aluno tem a opção de solicitar monitoria a um voluntário, comentar com outros usuários, ver um breve resumo comentado sobre a questão e ao final ver o seu desempenho.
